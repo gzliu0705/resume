@@ -1,0 +1,2 @@
+# Local Codex MCP configuration may contain access credentials.
+.codex/config.toml

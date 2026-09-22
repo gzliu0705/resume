@@ -1,0 +1,55 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[top=0.32in,bottom=0.32in,left=0.55in,right=0.55in]{geometry}
+\usepackage{enumitem,hyperref,titlesec,array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\hypersetup{colorlinks=true,urlcolor=black,linkcolor=black}
+\pagestyle{empty}
+\titleformat{\section}{\bfseries\normalsize}{}{0em}{}[\vspace{-4pt}\rule{\linewidth}{0.5pt}]
+\titlespacing{\section}{0pt}{4pt}{1pt}
+\setlist[itemize]{leftmargin=1.1em,itemsep=0pt,parsep=0pt,topsep=1pt,label=\textbullet}
+\begin{document}
+\fontsize{8.8pt}{10.0pt}\selectfont
+\begin{center}
+{\Large\bfseries WENTWORTH LIU}\\[2pt]
+{\small Open to relocate to London \;$\cdot$\; \href{mailto:gzliu0705@gmail.com}{gzliu0705@gmail.com} \;$\cdot$\; \href{https://www.linkedin.com/in/guanzhang-liu-4a4a02413}{linkedin.com/in/guanzhang-liu-4a4a02413}}\\[2pt]
+{\small Data Scientist \;$\vert$\; Machine Learning Engineer \;$\vert$\; Applied ML \;$\vert$\; Statistical Modelling \& Decision Science}
+\end{center}
+\vspace{-3pt}
+\section{SUMMARY}
+Data Scientist and Machine Learning Engineer with 2+ years of experience turning complex EV-fleet data into causal decision systems, interpretable ML workflows, reusable feature infrastructure, and AI-enabled internal products. Combines first-principles materials-science training with Python, SQL, PySpark, statistical modelling, MLOps, and cross-functional product delivery across battery safety, R\&D, and after-sales operations.
+\section{EXPERIENCE}
+\noindent\textbf{Li Auto} \hfill \textit{Battery Intelligence Department}\\
+\textit{Data Scientist} \hfill Jul 2024 -- Present
+\begin{itemize}
+\item \textbf{Causal Decision Science for Battery Longevity \& Lifecycle Strategy.} Led a business-led causal study on million-scale fleet telemetry to identify actionable longevity levers amid observational confounding. Applied propensity-score matching, covariate-balance diagnostics, and ATT estimation to separate likely causal effects from confounders and intermediate variables. Converted the evidence into self-service monitoring and decision workflows; partnered with BMS, cell-design, performance, and after-sales teams on feasible usage/OTA strategies, design-boundary validation, and a scenario-based single-model warranty-saving projection in the tens of millions of RMB.
+\item \textbf{Rare-event Safety Risk Scoring \& ML Operations.} Addressed thermal-runaway risk where scarce failure labels and diagnostic needs made a conventional binary classifier unsuitable. Reframed the problem as explainable relative-risk ranking, then built a monthly ML workflow spanning data-quality gates, platform-aware feature normalisation, statistical feature selection and redundancy control, evidence-weighted scoring, contribution-level explanations, batch scoring, publication, and audit checks. Deployed across five battery platforms on the internal ML platform, capturing 93\% of newly observed failures within the top 2\% of risk-ranked vehicles; enabled targeted inspection, case review, and root-cause investigation with after-sales, quality, and R\&D.
+\item \textbf{Feature Store \& Reusable ML Data Platform.} Designed and built a department-wide offline Feature Store to replace fragmented notebooks with a shared, configuration-driven system used and co-maintained by the team. Created a Git-controlled YAML feature registry and metadata/lineage model; implemented PySpark ODS-to-Hive-DM transformations covering event semantics, temporal alignment, start--end joins, time-weighted and cross-signal aggregation, platform-schema mapping, and selective materialisation. Standardised reusable features and train--score--diagnose consistency across five platforms, reducing feature-development cycle time by \textasciitilde85\%.
+\item \textbf{AI-enabled Risk Intelligence Product \& System Architecture.} Designed and AI-assisted-developed a cloud-deployed internal workbench that turns model and fleet-data outputs into feature visualisation and multi-perspective high-risk investigation. Defined a maintainable Web/API/asynchronous-worker architecture with StarRocks-backed retrieval, IDaaS-based access control, and auditable replay; integrated cohort comparison, single-vehicle analysis, operating-condition distributions, similarity analysis, and historical TR evidence into one workflow. The product is actively used internally and is expanding to additional modules.
+\item \textbf{Human-in-the-Loop NLP Quality Intelligence.} Co-designed a 30+ category taxonomy with after-sales experts and built a hybrid rules + TF-IDF + Random Forest classifier for 15k+ noisy work orders. Established confidence-based routing, expert-term evaluation, error analysis, and closed-loop retraining; improved operational accuracy from 85\% to 96\% within three months, achieved Weighted F1 $>$ 0.90, and replaced roughly 12 hours of weekly manual triage.
+\end{itemize}
+\vspace{1pt}
+\noindent\textbf{ByteDance} \hfill \textit{Douyin Market Strategy}\\
+\textit{Data Analytics Intern} \hfill May -- Sep 2023
+\begin{itemize}
+\item \textbf{Multi-source Intelligence \& Growth Decision Analytics.} Integrated signals from 5+ data platforms into an IP-popularity scoring system, added monitoring and workflow automation, and redesigned content metrics and classification frameworks to guide campaign and resource-allocation decisions; drove \textasciitilde60\% dashboard adoption and validated \textasciitilde40\% consumption growth following targeted campaigns.
+\end{itemize}
+\vspace{1pt}
+\noindent\textbf{Dongwu Securities} \hfill \textit{Mechanical Sector}\\
+\textit{Equity Research Intern} \hfill Dec 2021 -- Mar 2022
+\begin{itemize}\item \textbf{Quantitative Market Research \& Forecasting.} Analysed fundamentals, competitive positioning, and market dynamics for Harmonic Drive Systems; built a stock-price forecasting model and delivered investment recommendations.\end{itemize}
+\section{EDUCATION}
+\noindent\textbf{Nanjing University} \hfill Sep 2021 -- Jun 2024\\
+\textit{MSc Computational Materials Science} \;$\cdot$\; Developed \textit{Skeaf}, a 3D Fermi-surface visualisation tool combining HDBSCAN clustering with quantum-oscillation data; first author, \textit{Physical Review B} (2024); co-author, \textit{Physical Review B} (2024) and \textit{Physical Review Materials} (2023); Patent: CN115795266A.\\[1pt]
+\noindent\textbf{Nanjing University} \hfill Sep 2017 -- Jul 2021\\
+\textit{BSc Materials Science \& Engineering (Outstanding Graduate) \;$\cdot$\; GPA: 4.6/5.0 \;$\cdot$\; Top 1\% of cohort} \;$\cdot$\; National Scholarship (top 0.15\%) \;$\cdot$\; MCM/ICM 2020 Honorable Mention (Team Captain) \;$\cdot$\; Sakura Science Exchange Programme, Tohoku University.
+\section{SKILLS}
+\begin{tabular}{@{}p{3.0cm}p{12.5cm}@{}}
+\textbf{Programming} & Python \textperiodcentered{} SQL/HiveSQL \textperiodcentered{} PySpark \textperiodcentered{} C++ \textperiodcentered{} MATLAB \\[1pt]
+\textbf{Causal \& Applied ML} & PSM \textperiodcentered{} ATT \textperiodcentered{} Covariate Balance \textperiodcentered{} Statistical Modelling \textperiodcentered{} Rare-event ML \textperiodcentered{} Feature Normalisation \textperiodcentered{} Risk Ranking \textperiodcentered{} NLP \textperiodcentered{} Random Forest \\[1pt]
+\textbf{ML Engineering} & Feature Store Design \textperiodcentered{} Feature Registry \textperiodcentered{} Metadata \& Lineage \textperiodcentered{} Batch ML Pipelines \textperiodcentered{} Data-quality Gates \textperiodcentered{} Model Auditability \textperiodcentered{} Internal ML Platform Deployment \\[1pt]
+\textbf{Systems \& Product} & Analytical Workflow Design \textperiodcentered{} Product Design \textperiodcentered{} Web/API/Worker Architecture \textperiodcentered{} StarRocks \textperiodcentered{} Asynchronous Analysis \textperiodcentered{} IDaaS \textperiodcentered{} Data Productisation \\[1pt]
+\textbf{AI Delivery} & Agent Workflow Design \textperiodcentered{} LLM Integration \textperiodcentered{} Prompt Engineering \textperiodcentered{} Codex \textperiodcentered{} Claude Code \\[1pt]
+\textbf{Domain \& Lang.} & Battery Intelligence \textperiodcentered{} EV Analytics \textperiodcentered{} Engineering Systems \textperiodcentered{} English (TOEFL 104) \textperiodcentered{} Mandarin/Cantonese (Native) \textperiodcentered{} Japanese (JLPT N1) \\
+\end{tabular}
+\end{document}

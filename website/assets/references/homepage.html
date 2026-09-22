@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUANZHANGLIU - Typographic Cat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        /* 整体容器：浅米白背景 + 浅灰网格 */
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: #f3f0e8;
+            background-image: 
+                linear-gradient(to right, rgba(74, 74, 74, 0.08) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(74, 74, 74, 0.08) 1px, transparent 1px);
+            background-size: 80px 80px;
+            position: relative;
+            color: #444444;
+        }
+
+        /* 顶部信息卡片栏 */
+        .top-bar {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            display: flex;
+            gap: 16px;
+            z-index: 10;
+        }
+
+        .info-card {
+            padding: 12px 24px;
+            border-radius: 8px;
+            background-color: #444444;
+            color: #f3f0e8;
+            font-family: 'Courier New', monospace;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .info-card .label {
+            font-size: 12px;
+            opacity: 0.8;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .info-card .value {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* 字符猫咪主体：居中显示 */
+        .cat-typo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Courier New', monospace;
+            font-size: 8px;
+            line-height: 8px;
+            color: #444444;
+            white-space: pre;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        /* 左下角大标题 */
+        .main-title {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            font-size: 14vw;
+            font-weight: 900;
+            line-height: 0.85;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            color: #444444;
+        }
+
+        /* 右下角说明文案 */
+        .desc-block {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            text-align: right;
+            max-width: 420px;
+            color: #444444;
+        }
+
+        .desc-block .slogan {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 36px;
+            font-style: italic;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .desc-block .text {
+            font-size: 14px;
+            line-height: 1.6;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部信息卡片 -->
+        <div class="top-bar">
+            <div class="info-card">
+                <span class="label">latitude</span>
+                <span class="value">4.23</span>
+            </div>
+            <div class="info-card">
+                <span class="label">longitude</span>
+                <span class="value">-16.93</span>
+            </div>
+            <div class="info-card">
+                <span class="label">elevation</span>
+                <span class="value">base</span>
+            </div>
+            <div class="info-card">
+                <span class="label">scale</span>
+                <span class="value">x0.20</span>
+            </div>
+        </div>
+
+        <!-- 字母点阵暹罗猫头 -->
+        <div class="cat-typo">
+          aaaaaa               aaaaaa
+         aaaaaaaa             aaaaaaaa
+        aaaaaaaaaa           aaaaaaaaaa
+       aaaaaaaaaaaa         aaaaaaaaaaaa
+      aaaaaaaaaaaaaa       aaaaaaaaaaaaaa
+     aaaaaaaaaaaaaaaa     aaaaaaaaaaaaaaaa
+    aaaaaaaaaaaaaaaaaa   aaaaaaaaaaaaaaaaaa
+   aaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaa
+  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaa   oooooooooooo   oooooooooooo   aaaaaa
+aaaaa   oooooooooooooo oooooooooooooo   aaaaa
+aaaa   oooooooooooooooo oooooooooooooooo   aaaa
+aaaa   oooooooooooooooo oooooooooooooooo   aaaa
+aaaaa   oooooooooooooo oooooooooooooo   aaaaa
+aaaaaa   oooooooooooo   oooooooooooo   aaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+   aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+     aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+       aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+          aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+           aaaaaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaaa
+             aaaaaaaaaaaaaaaaaaaaaa
+              aaaaaaaaaaaaaaaaaaaa
+               aaaaaaaaaaaaaaaaaa
+                aaaaaaaaaaaaaaaa
+                 aaaaaaaaaaaaaa
+                  aaaaaaaaaaaa
+                   aaaaaaaaaa
+                    aaaaaaaa
+                     aaaaaa
+                      aaaa
+                       aa
+        </div>
+
+        <!-- 左下角大标题 -->
+        <div class="main-title">GUANZHANGLIU</div>
+
+        <!-- 右下角文案 -->
+        <div class="desc-block">
+            <div class="slogan">
+                We render<br>
+                loud & clear
+            </div>
+            <div class="text">
+                Cartographic data represented purely through typographical contours.
+                Zoom integration reflows string density to reveal micro-fissures
+                and sub-level lore fragments. Data strata dynamically adjust.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

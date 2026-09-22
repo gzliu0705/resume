@@ -1,0 +1,87 @@
+.page-shell {
+  min-height: 100vh;
+}
+
+.landing-page {
+  min-height: 100vh;
+}
+
+.hero {
+  position: relative;
+  height: 200vh;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 68% 28%, rgba(232, 227, 155, 0.04), transparent 22%),
+    var(--color-bg);
+}
+
+.hero__stage {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 38fr) minmax(0, 62fr);
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "nav     nav"
+    "bio     visual"
+    "name    tagline";
+  padding: 1.4rem 1.8rem 1.5rem 1.5rem;
+  gap: 0;
+}
+
+.hero__nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding-bottom: 0;
+}
+
+.hero__bio {
+  grid-area: bio;
+  align-self: center;
+  max-width: 27rem;
+  padding-right: 1rem;
+}
+
+.hero__visual {
+  grid-area: visual;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.hero__anchor-wrap {
+  grid-area: name;
+  align-self: end;
+  min-width: 0;
+  overflow: visible;
+}
+
+.hero__tagline {
+  grid-area: tagline;
+  align-self: end;
+  text-align: right;
+  margin: 0;
+  padding-bottom: 0.15rem;
+}
+
+.teaser {
+  padding: 0.75rem 0.75rem 3rem;
+  background: var(--color-bg);
+}
+
+.teaser__inner {
+  width: min(100%, var(--max-width));
+  margin: 0 auto;
+  border-top: var(--border-subtle);
+  padding-top: 1.25rem;
+}
+
+.teaser__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}

@@ -1,0 +1,5 @@
+# Why do you want to work for ClearScore?
+
+I am drawn to ClearScore because it applies data science to a problem with direct, meaningful impact on users: helping people understand their financial position and make better financial choices. The Global Targeting role is particularly compelling because it combines predictive modelling with product judgement---using data to decide what content or opportunities are most relevant to each user, rather than building models in isolation.
+
+My experience at Li Auto and ByteDance has focused on explainable ranking, segmentation, monitoring, and turning complex data into prioritised actions. I would be excited to bring those transferable skills to a user-centric product environment, while developing deeper expertise in consumer credit, financial wellbeing, and model performance across multiple markets. ClearScore's emphasis on collaboration, practical impact, and continuous learning is also strongly aligned with how I want to grow as a data scientist.

@@ -1,0 +1,81 @@
+@media (max-width: 1180px) {
+  .hero__stage {
+    grid-template-columns: minmax(0, 42fr) minmax(0, 58fr);
+  }
+}
+
+@media (max-width: 900px) {
+  /* On mobile/tablet disable sticky scroll-animation; stack layout */
+  .hero {
+    height: auto;
+  }
+
+  .hero__stage {
+    position: static;
+    height: auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "nav"
+      "visual"
+      "bio"
+      "name";
+    gap: 1.5rem 0;
+    padding: 1.1rem 1.1rem 1.8rem;
+  }
+
+  .hero__tagline {
+    display: none;
+  }
+
+  .hero__visual {
+    height: min(72vw, 72vh);
+  }
+
+  .hero__bio {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .hero__anchor {
+    font-size: clamp(3.5rem, 14vw, 7rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__bio {
+    font-size: 0.78rem;
+  }
+
+  .hero__nav-link {
+    font-size: 0.72rem;
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+
+  .hero__anchor {
+    font-size: clamp(3rem, 15vw, 5.5rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero__nav-link {
+    transition: none;
+  }
+
+  /* Disable scroll animation entirely for reduced-motion users */
+  .hero {
+    height: auto;
+  }
+
+  .hero__stage {
+    position: static;
+    height: auto;
+    min-height: 100vh;
+  }
+}

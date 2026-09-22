@@ -1,0 +1,115 @@
+\documentclass[a4paper,9pt]{article}
+
+% ---- Packages ----
+\usepackage[top=0.45in, bottom=0.45in, left=0.55in, right=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% ---- Hyperlink style ----
+\hypersetup{colorlinks=true, urlcolor=black, linkcolor=black}
+
+% ---- No page numbers ----
+\pagestyle{empty}
+
+% ---- Section formatting ----
+\titleformat{\section}{\bfseries\normalsize}{}{0em}{}[\vspace{-4pt}\rule{\linewidth}{0.5pt}]
+\titlespacing{\section}{0pt}{5pt}{2pt}
+
+% ---- List settings ----
+\setlist[itemize]{
+    leftmargin=1.1em,
+    itemsep=0pt,
+    parsep=0pt,
+    topsep=1pt,
+    label=\textbullet
+}
+
+% ================================================================
+\begin{document}
+
+% ---- Header ----
+\begin{center}
+    {\Large\bfseries GUANZHANG LIU}\\[2pt]
+    {\small
+    Beijing, China
+    \;$\cdot$\;
+    \href{mailto:gzliu0705@gmail.com}{gzliu0705@gmail.com}
+    \;$\cdot$\;
+    \href{https://www.linkedin.com/in/guanzhang-liu-4a4a02413}{linkedin.com/in/guanzhang-liu-4a4a02413}
+    }
+\end{center}
+
+\vspace{0pt}
+
+% ---- Summary ----
+\section{SUMMARY}
+Data scientist with \textasciitilde2 years of experience in EV battery intelligence at Li Auto,
+specialising in large-scale ML systems, feature engineering, and causal inference. Previously at ByteDance. Seeking data scientist roles in London.
+
+% ---- Experience ----
+\section{EXPERIENCE}
+
+\noindent\textbf{Li Auto} \hfill \textit{Beijing, China}\\
+\textit{Data Scientist, Battery Intelligence Department} \hfill Jul 2024 -- Present
+\begin{itemize}
+    \item Built a quasi-causal SOH degradation analytics system for Li Auto's million-scale fleet, identifying true lifespan drivers and quantifying that targeted usage adjustments extend battery life by \textasciitilde30\%; productised into an AI-powered self-service platform across multiple vehicle models, projecting tens of millions of RMB in warranty savings for a single vehicle model.
+
+    \item Identified thermal runaway risk across a 1M+ vehicle fleet by reframing extreme class imbalance as a white-box risk-ranking problem; deployed a cross-platform ML scoring pipeline across 5 battery platforms with per-vehicle explainable outputs, enabling targeted after-sales inspection prioritisation.
+
+    \item Productised battery behaviour feature engineering onto an internal ML platform --- custom event definitions, multi-operator aggregations, and cross-platform normalisation across 5 battery platforms --- improving iteration efficiency by \textasciitilde85\%.
+
+    \item Developed a hybrid NLP pipeline for battery quality work-order classification --- rule-based matching, TF-IDF, and Random Forest across 30+ fault categories; achieved \textasciitilde90\% accuracy on 15k+ samples, reducing manual labelling to confidence-guided hard-case review.
+
+    \item Delivered battery analytics across BMS thermal strategy validation, user behaviour profiling, and life test optimisation (W02/X01) --- building reusable end-to-end pipelines across 3+ vehicle platforms, directly shaping R\&D strategy and product validation standards.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{ByteDance} \hfill \textit{Beijing, China}\\
+\textit{Data Analytics Intern, Douyin Market Strategy} \hfill May -- Sep 2023
+\begin{itemize}
+    \item Built a multi-source IP popularity scoring system integrating 5+ data platforms with ML-enhanced pipeline monitoring and workflow automation; achieved \textasciitilde60\% dashboard adoption and validated \textasciitilde40\% consumption growth following targeted campaigns.
+
+    \item Delivered content strategy analytics for Qishui Music --- redesigned music hotness metrics, built custom vertical classification frameworks, and developed multi-dimensional trending topic scoring to inform content selection and marketing resource allocation.
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{Dongwu Securities} \hfill \textit{China}\\
+\textit{Equity Research Intern, Mechanical Sector} \hfill Dec 2021 -- Mar 2022
+\begin{itemize}
+    \item Produced an equity research report on Harmonic Drive Systems --- multi-dimensional analysis across company fundamentals, competitive positioning, and market dynamics; built a stock price forecasting model and delivered short, medium, and long-term investment recommendations.
+\end{itemize}
+
+% ---- Education ----
+\section{EDUCATION}
+
+\noindent\textbf{Nanjing University} \hfill Sep 2021 -- Jun 2024\\
+\textit{MSc Computational Materials Science}
+\begin{itemize}
+    \item Developed Skeaf --- a 3D Fermi surface visualisation tool integrating HDBSCAN clustering with quantum oscillation data; first author \textit{Physical Review B} (2024); co-author \textit{Physical Review B} (2024) \& \textit{Physical Review Materials} (2023); Patent: CN115795266A
+\end{itemize}
+
+\vspace{2pt}
+\noindent\textbf{Nanjing University} \hfill Sep 2017 -- Jul 2021\\
+\textit{BSc Materials Science \& Engineering (Outstanding Graduate) $\;\cdot\;$ GPA: 4.6/5.0 $\;\cdot\;$ Top 1\% of cohort}
+\begin{itemize}
+    \item National Scholarship (top 0.15\%) $\;\cdot\;$ MCM/ICM 2020 H Award (Team Captain) $\;\cdot\;$ Sakura Plan Exchange, Tohoku University, Japan (5 selected university-wide)
+\end{itemize}
+
+% ---- Skills ----
+\section{SKILLS}
+
+\begin{tabular}{@{}p{3.0cm}p{12.5cm}@{}}
+\textbf{Programming}      & Python \textperiodcentered{} SQL/HiveSQL \textperiodcentered{} C++ \textperiodcentered{} MATLAB \\[1pt]
+\textbf{ML \& Statistics} & Machine Learning \textperiodcentered{} NLP \textperiodcentered{} Feature Engineering \textperiodcentered{} Causal Inference \textperiodcentered{} Statistical Modelling \textperiodcentered{} Time Series Analysis \textperiodcentered{} LightGBM \textperiodcentered{} scikit-learn \textperiodcentered{} Transformer Models (BERT) \\[1pt]
+\textbf{AI Tools}         & AgentOps \textperiodcentered{} Claude Code \textperiodcentered{} OpenClaw (Self-hosted LLM) \textperiodcentered{} LLM Integration \textperiodcentered{} Prompt Engineering \\[1pt]
+\textbf{Infrastructure}   & Linux \textperiodcentered{} Hadoop \textperiodcentered{} PyQt5 \textperiodcentered{} Mayavi \\[1pt]
+\textbf{Domain}           & Battery Intelligence \textperiodcentered{} EV Analytics \textperiodcentered{} Scientific Computing \\[1pt]
+\textbf{Languages}        & English (TOEFL 104) \textperiodcentered{} Chinese --- Mandarin (Native) \textperiodcentered{} Cantonese (Native) \textperiodcentered{} Japanese (JLPT N1) \\
+\end{tabular}
+
+\end{document}

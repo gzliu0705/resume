@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Guanzhang Liu — Data Scientist focused on battery intelligence, applied machine learning, and decision-oriented analytics."
+  />
+  <title>Guanzhang Liu — Homepage Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/layout.css" />
+  <link rel="stylesheet" href="./styles/hero.css" />
+  <link rel="stylesheet" href="./styles/responsive.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <main class="landing-page">
+      <section class="hero" aria-labelledby="hero-title">
+
+        <div class="hero__stage">
+          <nav class="hero__nav" aria-label="Primary navigation">
+            <a class="hero__nav-link" href="#teaser">Explore Selected Work</a>
+            <a class="hero__nav-link" href="#">View Resume</a>
+            <a class="hero__nav-link" href="https://www.linkedin.com/in/guanzhang-liu-4a4a02413" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+          </nav>
+
+          <div class="hero__bio">
+            <p>Data Scientist in<br><strong>battery intelligence</strong>, <strong>applied ML</strong>,<br>and decision-focused analytics.</p>
+            <p>Currently at <strong>Li Auto</strong>. Previously at <strong>ByteDance</strong>.</p>
+            <p>Open to <strong>London</strong> opportunities.</p>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="cat-field-frame">
+              <canvas class="cat-field" id="cat-field"></canvas>
+            </div>
+          </div>
+
+          <div class="hero__anchor-wrap">
+            <h1 class="hero__anchor" id="hero-title">GUANZHANG LIU</h1>
+          </div>
+
+          <p class="hero__tagline">Interpreting<br>complex systems<br>with data</p>
+        </div>
+      </section>
+
+      <!-- Path & Traces — thread leads here from the hero canvas -->
+      <section class="path-section" id="path" aria-label="Career path">
+        <div class="path-section__inner">
+
+          <!-- Canvas-based character thread — grows progressively with scroll -->
+          <canvas id="path-thread-canvas" class="path-thread-canvas" aria-hidden="true"></canvas>
+
+          <ol class="path-timeline" role="list">
+
+            <li class="path-event">
+              <div class="path-event__body">
+                <div class="path-event__header">
+                  <time class="path-event__year" datetime="2017">2017</time>
+                  <h3 class="path-event__title">BSc in Materials Science</h3>
+                </div>
+                <p class="path-event__desc">Nanjing University — Top 2% cohort, National Scholarship, MCM finalist</p>
+              </div>
+              <div class="path-event__dot" aria-hidden="true"></div>
+            </li>
+
+            <li class="path-event">
+              <div class="path-event__body">
+                <div class="path-event__header">
+                  <time class="path-event__year" datetime="2021">2021</time>
+                  <h3 class="path-event__title">MSc in Computational Materials Science</h3>
+                </div>
+                <p class="path-event__desc">Nanjing University — Published in Physical Review B, national patent, graduated top of cohort</p>
+              </div>
+              <div class="path-event__dot" aria-hidden="true"></div>
+            </li>
+
+            <li class="path-event">
+              <div class="path-event__body">
+                <div class="path-event__header">
+                  <time class="path-event__year" datetime="2022">2022</time>
+                  <h3 class="path-event__title">Data Analyst · ByteDance</h3>
+                </div>
+                <p class="path-event__desc">Douyin market strategy team — built IP popularity scoring model, reached ~60% dashboard adoption, directly supported content investment decisions</p>
+              </div>
+              <div class="path-event__dot" aria-hidden="true"></div>
+            </li>
+
+            <li class="path-event">
+              <div class="path-event__body">
+                <div class="path-event__header">
+                  <time class="path-event__year" datetime="2024">2024</time>
+                  <h3 class="path-event__title">Data Scientist · Li Auto</h3>
+                </div>
+                <p class="path-event__desc">Battery Intelligence department — fleet-scale risk ranking (1M+ vehicles), quasi-causal degradation analysis, feature engineering platform (~85% efficiency gain)</p>
+              </div>
+              <div class="path-event__dot" aria-hidden="true"></div>
+            </li>
+
+            <li class="path-event path-event--open">
+              <div class="path-event__body">
+                <div class="path-event__header">
+                  <time class="path-event__year" datetime="2026">2026+</time>
+                  <h3 class="path-event__title">Next chapter — London</h3>
+                </div>
+                <p class="path-event__desc">Dependent visa holder (5 yr, from Jul 2026). Open to Data Scientist roles in energy, AI, or internet — no sponsorship needed.</p>
+              </div>
+              <div class="path-event__dot" aria-hidden="true"></div>
+            </li>
+
+          </ol>
+
+          <!-- Mini ASCII cat at thread's end — grabbing the loose tail -->
+          <div class="path-cat" aria-label="A small ASCII cat catching the thread" role="img">
+            <pre class="path-cat__art">
+   =*=   =*=
+  @%@%@%@%@
+  @%+ . +%@
+  @%:v v:%@
+  @%  w  %@
+  @%#####%@
+   @%@@@%@
+   @%.  .%@  &lt;-- grabs thread
+    @@@@@@@</pre>
+            <p class="path-cat__label">. . . still curious</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="teaser" id="teaser" aria-labelledby="teaser-title">
+        <div class="teaser__inner">
+          <p class="teaser__label">Selected signals</p>
+          <h2 class="teaser__title" id="teaser-title">A compact preview of the work behind the narrative.</h2>
+          <div class="teaser__grid">
+            <article class="teaser-card">
+              <h3>Thermal Runaway Risk Ranking</h3>
+              <p>Explainable fleet-scale risk scoring designed to support targeted after-sales inspection decisions.</p>
+            </article>
+            <article class="teaser-card">
+              <h3>Quasi-Causal Battery Degradation</h3>
+              <p>Battery lifespan analysis that separates confounding effects from operationally useful signals.</p>
+            </article>
+            <article class="teaser-card">
+              <h3>Work-Order NLP Classification</h3>
+              <p>Hybrid text classification workflows that move teams from manual sorting to confidence-guided review.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./data/hero-content.js"></script>
+  <script src="./scripts/cat-field.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
