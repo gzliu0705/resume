@@ -10,15 +10,19 @@ This document turns the detailed project answers in `answer.md` into defensible 
 - Used a one-year observation window and quality-controlled SOH labels computed by a cloud-deployed algorithm using K-means, point-count checks, and window-average smoothing.
 - Defined treatment/control groups for charging-temperature and average-SOC behaviours; used logistic-regression propensity scores, KNN matching with caliper 1, SMD plus distributional tests for balance, and ATT after binning continuous values.
 - Tested whether candidate drivers were confounders or intermediate variables by re-running PSM with factors introduced as covariates and inspecting distributional changes.
-- Converted effects into feasible OTA/BMS strategies and feedback for cell-design boundary testing. Warranty impact is scenario-based, not a realised saving.
+- Built a forecasting layer by fitting early-life SOH-degradation slopes, recursively converting predicted slopes into future SOH values, and identifying cohorts likely to cross the warranty threshold.
+- Partnered with performance-engineering teams to translate the identified drivers into controllable strategy parameters. Simulated the post-intervention driver distribution under candidate thresholds, propagated the cumulative effect through future SOH trajectories, and built a driver-to-strategy effect map across parameter settings and combinations.
+- Fitted strategies by cohort and used staged, one-strategy-at-a-time OTA rollout so each intervention could be assessed before combining strategies. Findings also informed cell-design boundary testing.
+- Evaluated six-month impact using two complementary counterfactuals: SOH-distribution and trajectory comparisons against PSM-matched control cohorts, and each treated vehicle's observed SOH trajectory against its pre-intervention fitted no-strategy trajectory.
+- Fed observed rollout effects back into the warranty-horizon simulation, projecting tens of millions of RMB in avoided warranty costs for one vehicle model. This is a projected impact, not a realised accounting saving.
 
 ### Capabilities demonstrated
 
-Causal problem framing; observational-study design; PSM; cohort construction; treatment-effect estimation; confounder reasoning; model-to-product translation; battery domain judgement; R&D and after-sales decision support.
+Causal problem framing; observational-study design; pre-treatment confounder selection; VIF-based multicollinearity checks; PSM; SMD and distributional balance diagnostics; interval-level ATT estimation; dose-response fitting; recursive degradation forecasting; cohort construction; simulation-based strategy mapping; cohort-level strategy fitting; staged OTA experimentation; matched-cohort evaluation; counterfactual trajectory validation; cross-functional decision making; battery domain judgement; R&D and after-sales decision support.
 
 ### Safe wording
 
-Use “projecting” or “estimated” for warranty savings and life extension. Prefer “time to the 80% SOH warranty threshold” over a broad claim that all batteries last 30% longer.
+Use “projecting” or “estimated” for warranty savings and life extension. Refer externally to the “warranty threshold” without disclosing the exact threshold. The identified drivers may be retained in the internal evidence record, but CV wording should use “actionable user-behaviour drivers” unless disclosure is explicitly approved. Do not call the within-vehicle actual-versus-fitted comparison difference-in-differences: it is a model-based counterfactual trajectory comparison. Use PSM-DiD only if both treated and matched-control groups are compared before and after rollout.
 
 ## 2. Thermal-runaway risk model and monthly MLOps pipeline
 
@@ -28,13 +32,15 @@ Use “projecting” or “estimated” for warranty savings and life extension.
 - Reframed the task as explainable ranking: find vehicles showing patterns most similar to historical failure cases, rather than claim an absolute failure probability.
 - Built the pipeline from partitioned raw data, benchmark statistics, and historical TR events through transformation, training eligibility, feature selection, risk scoring, ranking, contribution generation, Gray-dimension calibration, publication, and workbench consumption.
 - Used Mann--Whitney feature selection, effect-size and coverage thresholds, correlation clustering, directional rules, weighted contributions, and normal-pool ranking. A score is a relative risk-pattern score, not a calibrated probability.
+- For each retained feature, learned a risk direction, rule weight, and normal-population reference distribution. Scoring supports Gaussian-CDF, ECDF, and robust-ECDF mappings: each observed value is converted into a direction-aware tail-risk contribution, clipped where required, then combined through normalised weighted aggregation. The final score is exactly decomposable into feature-level contributions.
 - Designed a monthly MLOps workflow with upstream checks, data-quality gates, training, offline validation, batch scoring, publishing, read-back checks, and audit metadata. Each stage records partitions, code/model versions, feature/sample/rule counts, output row counts, and validation state.
+- Production delivery includes Docker-packaged components and API access for published results and case-level rescoring. The monthly pipeline monitors downstream performance and automatically incorporates newly confirmed failure cases into subsequent model training, scoring, and risk-list generation.
 - Achieved 93% Recall@2% on validation: 93% of observed failures appeared in the top 2% ranked samples.
 - Diagnosed cross-platform and feature-normalisation failure modes, including ratio/sum zero-value distortion under z-scoring; introduced median-based quasi-z-score treatment. Identified a remaining unvalidated quantile-projection approach for an X-to-W migration with no W-platform failures.
 
 ### Capabilities demonstrated
 
-Rare-event ML; ranking formulation; interpretable model design; feature selection; MLOps pipeline design; batch deployment; reproducibility; auditability; data-quality controls; model debugging; platform adaptation; explainability aligned to business decisions.
+Rare-event ML; interpretable risk scoring; CDF-based directional scoring; Mann--Whitney feature selection; clustering-based redundancy control; custom cross-platform normalisation; Docker packaging; API design; MLOps pipeline design; automated model refresh; batch deployment; monitoring; reproducibility; auditability; data-quality controls; model debugging; platform adaptation; explainability aligned to business decisions.
 
 ### Safe wording
 
@@ -82,7 +88,7 @@ Use “designed and AI-assisted-developed” rather than “led full-stack engin
 ### Verified contribution
 
 - Co-defined and corrected a 30+ class taxonomy with after-sales experts.
-- Built a hybrid rules, TF-IDF and Random Forest classifier for 15k+ free-text work orders with typos, inconsistent terminology and class imbalance.
+- Built a hybrid rules, TF-IDF and Random Forest classifier for 50k+ free-text work orders with typos, inconsistent terminology and class imbalance.
 - Chose the hybrid approach after BERT was less effective and less compatible with expert knowledge and interpretation.
 - Used expert-term F1 evaluation to curate a lexicon; weighted F1 aggregates class-specific performance by class weight.
 - Built a human-in-the-loop retraining loop: low-confidence cases go to after-sales review, verified labels return to training, and error cases are jointly diagnosed by business experts and the model owner.
