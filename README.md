@@ -30,6 +30,6 @@
 
 整理副本最初包含原目录的 1,596 个需保留文件（含 `career-ops/` 下被 Git 忽略的个人数据），复制后逐个 SHA-256 校验一致。迁移时不覆盖原目录的 `.git/`、`career-ops/node_modules/`、`career-ops/data/cache/`、临时 `.tmp` 文件和可能含凭据的 `.codex/config.toml`。上传个人求职资料不等于取消 `career-ops/` 对本地运行数据的忽略规则；Git 暂存前单独核对范围。
 
-最初 152 个个人材料文件的迁移快照见 [FILE-MAP.tsv](FILE-MAP.tsv)，后续岗位统一重排见 [applications/MOVE-MAP.tsv](applications/MOVE-MAP.tsv)；前者是历史记录，不再作为全部文件的现行路径索引。工具源码未移动。
+最初 152 个个人材料文件的迁移快照见 [FILE-MAP.tsv](FILE-MAP.tsv)，后续岗位统一重排见 [applications/MOVE-MAP.tsv](applications/MOVE-MAP.tsv)；前者是历史记录，不再作为全部文件的现行路径索引。旧岗位的顶层目录已在内容迁入 `applications/` 后清除空壳；Git 不跟踪空目录，所以这些目录本来也不会出现在新克隆的仓库中。根目录仅保留资料分类入口、独立工具 `career-ops/`、仓库配置及导航/迁移记录。工具源码未移动。`career-ops/` 下用于工具运行的空 `.gitkeep` 是必要占位文件，不属于待清理的简历资料。
 
 需本人确认的版本和披露问题见 [ORGANIZATION-DECISIONS.md](ORGANIZATION-DECISIONS.md)。

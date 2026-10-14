@@ -13,7 +13,7 @@
 ## 仍需本人确认（不阻挡已确认资料的归档）
 
 1. 已决定不把旧 `resume.tex` 或 9 月 `resume_general_ds.tex` 当成基线；本人指定 [MASTER 固定入口](profile/resumes/MASTER.md)所指向的双页通用简历为今后岗位定制母版。另有独立的 [一页通用投递版](profile/resumes/WentworthLiu_General_DS_OnePage.pdf)，不能反向缩减母版；发出前仍应核对母版 README 中的事实待确认项。
-2. `energy/` 是否改名 `stantec/`；Harnham / Yolk 对应的实际雇主是否另记？
+2. `applications/energy/` 是否改名 `applications/stantec/`；Harnham / Yolk 对应的实际雇主是否另记？
 3. 当前线上 LinkedIn 链接和所在地、部分指标和任职日期的准确口径；发布状态已确认不代表每条事实已经复核。
 
 ## 迁移和提交约束
@@ -21,4 +21,5 @@
 - 对已获明确允许上传的资料按用户决定办理；不会把密码或 API 凭据当成求职资料。原 Git 历史即使删除旧文件仍会保留旧内容。
 - 列出原路径 → 整理路径映射，在原仓库使用可审计的移动与引用更新；不要直接把整理副本覆盖到原目录，避免留下两套同名旧文件。
 - 保持 `career-ops/.gitignore` 和根目录 `.gitignore` 对本地用户数据与凭据的现有限制；上传此次整理的求职材料，不强制暂存这些被忽略的工具运行数据。
+- 2026-10-14 清理迁移后根目录十个旧岗位的空目录及空子目录，以及 `applications/aesc/role/`、`website/assets/images/` 两个空目录；删除无人引用、0 字节的 `website/assets/references/首页排版.pptx`。`career-ops/` 内 0 字节 `.gitkeep` 保留作工具占位，不据此清理工具目录；Git 不跟踪空目录，目录删除只影响当前本地工作区。
 - 核对文件数、SHA-256、链接及 Git diff；只有验证通过才提交/推送。
