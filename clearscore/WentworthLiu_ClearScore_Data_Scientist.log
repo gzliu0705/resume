@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.9.7)  8 SEP 2026 14:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.9.7)  24 SEP 2026 10:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -315,8 +315,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 end-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count302
-)
-No file WentworthLiu_ClearScore_Data_Scientist.aux.
+) (WentworthLiu_ClearScore_Data_Scientist.aux)
 \openout1 = `WentworthLiu_ClearScore_Data_Scientist.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -337,6 +336,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -346,14 +346,14 @@ LaTeX Font Info:    ... okay on input line 17.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(39.74872pt, 518.01044pt, 39.74872pt)
-* v-part:(T,H,B)=(27.46295pt, 790.12094pt, 27.46295pt)
+* v-part:(T,H,B)=(23.12692pt, 798.793pt, 23.12692pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=518.01044pt
-* \textheight=790.12094pt
+* \textheight=798.793pt
 * \oddsidemargin=-32.52127pt
 * \evensidemargin=-32.52127pt
-* \topmargin=-81.80704pt
+* \topmargin=-86.14307pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -404,6 +404,8 @@ File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 (C:\Users\liuguanzhang\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcol
 or.ltx))
 Package hyperref Info: Link coloring ON on input line 17.
+ (WentworthLiu_ClearScore_Data_Scientist.out)
+(WentworthLiu_ClearScore_Data_Scientist.out)
 \@outlinefile=\write3
 \openout3 = `WentworthLiu_ClearScore_Data_Scientist.out'.
 
@@ -431,45 +433,50 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-1.
+2.
 
 (C:\Users\liuguanzhang\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-1.
+2.
 
 (C:\Users\liuguanzhang\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-21.
+22.
 
 (C:\Users\liuguanzhang\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-21.
+22.
 
 (C:\Users\liuguanzhang\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 21.
+(Font)              <9> on input line 22.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 21.
+(Font)              <6> on input line 22.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 21.
+(Font)              <5> on input line 22.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 23.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-5.
+7.
 
 (C:\Users\liuguanzhang\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
+LaTeX Font Info:    Calculating math sizes for size <8.8> on input line 63.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 70.
+(Font)              <8.8> on input line 63.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 70.
+(Font)              <6.15997> on input line 63.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <4.4> on input line 63.
 
 [1
 
@@ -482,37 +489,31 @@ s1.enc}] (WentworthLiu_ClearScore_Data_Scientist.aux)
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-Package rerunfilecheck Warning: File `WentworthLiu_ClearScore_Data_Scientist.ou
-t' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `WentworthLiu_ClearScore_Data_Scient
-ist.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  5E1537426F19599AED21507F6F430435;332.
+Package rerunfilecheck Info: File `WentworthLiu_ClearScore_Data_Scientist.out' 
+has not changed.
+(rerunfilecheck)             Checksum: 5E1537426F19599AED21507F6F430435;332.
  ) 
 Here is how much of TeX's memory you used:
- 11661 strings out of 467871
- 187307 string characters out of 5414989
- 654918 words of memory out of 5000000
- 40348 multiletter control sequences out of 15000+600000
- 665047 words of font info for 99 fonts, out of 8000000 for 9000
+ 11730 strings out of 467871
+ 188647 string characters out of 5414989
+ 654028 words of memory out of 5000000
+ 40381 multiletter control sequences out of 15000+600000
+ 686908 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,8n,79p,1037b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/liuguanzhang/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
 bx10.pfb><C:/Users/liuguanzhang/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/lm/lmbx12.pfb><C:/Users/liuguanzhang/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/lm/lmr10.pfb><C:/Users/liuguanzhang/AppData/Local/Programs/MiKTeX/font
-s/type1/public/lm/lmr9.pfb><C:/Users/liuguanzhang/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/lm/lmsy10.pfb><C:/Users/liuguanzhang/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/lm/lmsy9.pfb>
-Output written on WentworthLiu_ClearScore_Data_Scientist.pdf (1 page, 135147 by
+1/public/lm/lmbx9.pfb><C:/Users/liuguanzhang/AppData/Local/Programs/MiKTeX/font
+s/type1/public/lm/lmr8.pfb><C:/Users/liuguanzhang/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/lm/lmr9.pfb><C:/Users/liuguanzhang/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/liuguanzhang/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/liuguanzhang/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb>
+Output written on WentworthLiu_ClearScore_Data_Scientist.pdf (1 page, 175517 by
 tes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 76 PDF objects out of 1000 (max. 8388607)
  6 named destinations out of 1000 (max. 500000)
- 22529 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 34849 words of extra memory for PDF output out of 35830 (max. 10000000)
 
