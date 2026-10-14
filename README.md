@@ -9,7 +9,6 @@
 | [applications/](applications/INDEX.md) | 十个既有岗位及新增的 Breathe、Elysia、AESC 申请档案，含已知 JD、PDF、稿件和面试准备 | [统一结构](applications/STRUCTURE.md)，已投递文件与草稿分开记录；无 JD 的申请不虚构岗位 |
 | [website/](website/docs/source-of-truth.md) | 网站内容、设计与演示 | 项目内结构不变，引用改为仓库相对路径 |
 | [references/](references/README.md) | 逐文件索引的历史简历、汇总 JD、写法样本、求职指南和学习笔记 | 仅供参考，不能当作当前有效简历或个人事实依据 |
-| [archive/](archive/README.md) | 根目录原有的 LaTeX 构建日志 | 只归档，未删除 |
 | `career-ops/` | 独立求职工具及其本地用户数据 | 不重排源码；其 `data/applications.md` 是工具内状态记录，当前被 Git 忽略 |
 
 ## 事实与时间顺序
