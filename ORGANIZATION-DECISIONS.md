@@ -6,13 +6,14 @@
 
 - ClearScore 和 Fuse 均实际投递，均使用各自最新 PDF。ClearScore 最新两份文件逐字节相同且保存时间相同，只能确定内容，无法单凭文件确定上传时采用哪个文件名；Fuse 两份 PDF 提取出的正文相同，但字节不同，`WentworthLiu_CV.pdf` 保存时间较晚约四分钟，按“最新 PDF”确认其内容为投递版本。没有投递日志，精确上传时间不据此虚构。
 - Revolut 的 `cv.pdf` 确为投递文件；与 Axle Energy 的一次输出相同并非文件放错。
+- 本人进一步确认其余七个岗位也都投递过，均使用各岗位目录下最新的 PDF；每个目录仅有一份候选 PDF，已归入对应的 `applications/<岗位>/submitted/`。具体投递日期和上传文件名仍未由回执核验。
 - 本人确认 2026-10-13 LinkedIn 的修改已经发布；2026-10-10 的导出 PDF 不能证明这些修改之后的页面状态。
 - 本人允许上传先前列举的项目细节、面试笔记、LinkedIn 导出 PDF 和签证相关材料；不等于允许将凭据、`.git/`、依赖、缓存或工具内被 Git 忽略的本地用户运行数据一并上传。公开仓库及历史版本的传播风险已告知。
 
 ## 仍需本人确认（不阻挡已确认资料的归档）
 
-1. 通用简历后续维护的主版本：`resume.tex`、`resume_general_ds.tex`，还是新建基线？
-2. 其他岗位（非 ClearScore/Fuse/Revolut）的 PDF 是否实际投递；`energy/` 是否改名 `stantec/`；Harnham / Yolk 对应的实际雇主是否另记？
+1. 已决定不把旧 `resume.tex` 或 9 月 `resume_general_ds.tex` 当成基线；本人指定 [MASTER 固定入口](profile/resumes/MASTER.md)所指向的双页通用简历为今后岗位定制母版。另有独立的 [一页通用投递版](profile/resumes/WentworthLiu_General_DS_OnePage.pdf)，不能反向缩减母版；发出前仍应核对母版 README 中的事实待确认项。
+2. `energy/` 是否改名 `stantec/`；Harnham / Yolk 对应的实际雇主是否另记？
 3. 当前线上 LinkedIn 链接和所在地、部分指标和任职日期的准确口径；发布状态已确认不代表每条事实已经复核。
 
 ## 迁移和提交约束

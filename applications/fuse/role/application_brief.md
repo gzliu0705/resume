@@ -20,7 +20,7 @@ Currently based in China and open to relocating to London. Holds a UK dependent 
 
 ## Final assets
 
-- Resume: `03_application/resume/WentworthLiu_CV.pdf` (later export; candidate confirmed the latest PDF was submitted)
-- Resume source: `03_application/resume/WentworthLiu_Fuse_Resume.tex`
-- Recruiter reply: `03_application/communication/initial_reply.md`
-- Evidence base: `02_candidate_evidence/`
+- Resume: `../submitted/WentworthLiu_CV.pdf` (later export; candidate confirmed the latest PDF was submitted)
+- Resume source: `../source/WentworthLiu_Fuse_Resume.tex`
+- Recruiter reply draft: `../working/communication/initial_reply.md` (sending status not separately verified)
+- Reusable project evidence: `../../../evidence/projects/`

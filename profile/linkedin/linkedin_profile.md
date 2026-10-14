@@ -1,7 +1,7 @@
 # LinkedIn 个人主页完整工作稿
 
 更新日期：2026-10-13  
-对照材料：`snapshots/linkedin_1010.pdf`、`applications/fuse/03_application/resume/WentworthLiu_CV.pdf`、`applications/clearscore/submitted/WentworthLiu_ClearScore_Data_Scientist_Final_2026-09-24.pdf`。
+对照材料：`snapshots/linkedin_1010.pdf`、`applications/fuse/submitted/WentworthLiu_CV.pdf`、`applications/clearscore/submitted/WentworthLiu_ClearScore_Data_Scientist_Final_2026-09-24.pdf`。
 
 **2026-10-14 本人补充：**2026-10-13 的 LinkedIn 修改已发布。下方“建议稿”“尚未核实已发布”“待确认”等是写作当时的历史注记，不能据此断言目前未发布；但发布与项目数字、任职日期、所在地等事实已经核实是两回事。2026-10-10 导出 PDF 早于这些修改，不能拿它验证修改后的线上栏目细节。
 
@@ -31,7 +31,7 @@ At ByteDance, I built multi-source content measurement tools that reached approx
 
 I’m seeking Data Scientist opportunities in London and am authorised to work in the UK without employer sponsorship.
 
-> **待确认：**两份定制简历对 93% 指标的样本口径分别写为「新观察到的」与「历史」案例。当前草稿仅写 `evaluated cases`，定稿时应核实准确口径。Fuse 的项目证据没有给出安全风险项目可单独量化的财务节省额；ClearScore 草稿只提到减少不必要的电池更换成本，不能把寿命项目的**单车型预测节省**套用到安全项目。约 85% 指特征开发时间／周期，约 60% 指 ByteDance 内部看板采用率。英国工作资格措辞依据 `fuse/01_role/application_brief.md` 和 ClearScore 简历；发布前请核对实际 UKVI 状态与当前签证条件，不公开签证类型或到期日。
+> **待确认：**两份定制简历对 93% 指标的样本口径分别写为「新观察到的」与「历史」案例。当前草稿仅写 `evaluated cases`，定稿时应核实准确口径。Fuse 的项目证据没有给出安全风险项目可单独量化的财务节省额；ClearScore 草稿只提到减少不必要的电池更换成本，不能把寿命项目的**单车型预测节省**套用到安全项目。约 85% 指特征开发时间／周期，约 60% 指 ByteDance 内部看板采用率。英国工作资格措辞依据 `applications/fuse/role/application_brief.md` 和 ClearScore 简历；发布前请核对实际 UKVI 状态与当前签证条件，不公开签证类型或到期日。
 
 ## Experience
 

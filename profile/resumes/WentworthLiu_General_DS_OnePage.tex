@@ -1,0 +1,56 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[top=0.48in,bottom=0.48in,left=0.55in,right=0.55in]{geometry}
+\usepackage{enumitem,hyperref,titlesec,array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\hypersetup{colorlinks=true,urlcolor=black,linkcolor=black}
+\pagestyle{empty}
+\titleformat{\section}{\bfseries\normalsize}{}{0em}{}[\vspace{-4pt}\rule{\linewidth}{0.5pt}]
+\titlespacing{\section}{0pt}{4pt}{1pt}
+\setlist[itemize]{leftmargin=1.05em,itemsep=2pt,parsep=0pt,topsep=1pt,label=\textbullet}
+\setlength{\parindent}{0pt}
+\begin{document}
+\fontsize{9.8pt}{11.2pt}\selectfont
+
+\begin{center}
+{\Large\bfseries WENTWORTH LIU}\\[2pt]
+{\small Open to London opportunities \;$\cdot$\; \href{mailto:gzliu0705@gmail.com}{gzliu0705@gmail.com} \;$\cdot$\; \href{https://www.linkedin.com/in/wentworth-liu-4a4a02413}{linkedin.com/in/wentworth-liu-4a4a02413}}\\[2pt]
+{\small Data Scientist \;$\vert$\; Applied ML, Statistical Modelling \& Decision Science}
+\end{center}
+\vspace{-4pt}
+
+\section{SUMMARY}
+Data Scientist combining statistical inference, applied machine learning and engineering to turn complex business problems into decisions teams can use. Connects rigorous analysis with production delivery where rare outcomes, observational data or fragmented signals make straightforward modelling inadequate. Owns work from problem framing and feature engineering through explainable modelling, deployment and monitoring. Built battery-longevity, safety-risk and feature systems at Li Auto with engineering, quality and after-sales teams, and multi-source measurement tools for marketing decisions at ByteDance.
+
+\section{EXPERIENCE}
+\textbf{Li Auto} \hfill \textit{Jul 2024 -- Present}\\
+\textit{Data Scientist, Battery Intelligence Department}
+\begin{itemize}
+\item \textbf{Behavioural Risk Scoring \& MLOps.} Built an explainable relative-risk system to prioritise rare thermal-runaway investigations under extreme class imbalance. Captured 93\% of evaluated cases within the top-ranked 2\% of vehicles, narrowing investigation candidates from tens of thousands to thousands; the score ranks cases, not failure probabilities. Applied Mann--Whitney screening and correlation-cluster redundancy control to 1.5k+ vehicle-behaviour features, then developed decomposable, directional CDF-based scoring with platform-aware normalisation; productionised monthly Docker-packaged scoring with API delivery, validation, monitoring and case-driven refresh.
+\item \textbf{Causal Inference \& Cohort-targeted Longevity Strategy.} Turned observational vehicle-behaviour data into cohort-targeted interventions by linking causal effect estimation, battery-degradation forecasting and OTA strategy evaluation. Used confounder control, propensity-score matching, ATT and dose-response estimation to isolate actionable drivers; recursively projected early-life battery state-of-health trajectories to identify warranty-risk cohorts. Partnered with BMS, cell-design, performance and after-sales teams to map feasible interventions and evaluate staged OTA rollout. Six-month matched-cohort and within-vehicle counterfactual evaluations supported a \emph{projection} of tens of millions of RMB in avoided warranty costs for a single vehicle model, not realised savings.
+\item \textbf{End-to-End Offline Feature Store.} Designed 1.5k+ vehicle-cycle behaviour features and built an in-house, department-wide offline Feature Store, cutting feature-development time by approximately 85\% and reducing duplicated computation and storage. Implemented a Git-managed YAML feature registry with metadata and lineage, schema-driven PySpark ETL with temporal alignment, validated ingestion, historical backfills, monitoring and model-ready export through internal APIs, making features reproducible across analysis, training and batch scoring.
+\item \textbf{Confidence-Aware NLP Work-Order Classification.} Built a confidence-aware system for 50k+ noisy after-sales work orders across 30+ categories, routing low-confidence cases to expert review. Automated over 93\% of labelled samples, raising accuracy from 83\% to 96\% in three months (weighted F1 $>0.90$) and replacing roughly 12 manual hours weekly. Co-designed the label taxonomy, evaluated expert terms using keyword-level F1, engineered domain-informed TF-IDF features and trained a Random Forest classifier with weekly retraining on verified labels.
+\end{itemize}
+
+\textbf{ByteDance} \hfill \textit{May 2023 -- Sep 2023}\\
+\textit{Data Analytics}
+\begin{itemize}
+\item \textbf{Fanqie IP Popularity Model for Promotion Prioritisation.} Built a daily model to inform which IPs warranted continued promotion. Integrated consumption, dissemination and search signals through automated ETL and data-quality monitoring; combined PCA-derived statistical weights with business-agreed AHP weights and cloud-deployed the dashboard. Reached approximately 60\% internal adoption; a business retrospective recorded approximately 40\% higher anchor-tracked app downloads across team-promoted videos in the month after marketing adjusted promotion priorities versus the preceding month---an observational comparison, not a measured causal effect of the model.
+\item \textbf{Qishui Music Audience Saturation \& Acquisition Targeting.} Diagnosed falling anchor-linked new-user activations as audience saturation in video-led acquisition. Used funnel-stage analysis and cross-product audience matching to compare installed-user penetration with anchor-linked new-user activation rates by content vertical. Marketing shifted promotion from saturated to higher-potential verticals; no unverified uplift is claimed.
+\end{itemize}
+
+\section{EDUCATION}
+\textbf{Nanjing University} \hfill \textit{Sep 2021 -- Jun 2024}\\
+MSc Computational Materials Science. Built an open-source 3D Fermi-surface analysis tool; first author in \textit{Physical Review B} (2024), co-first author in \textit{Physical Review Materials} (2023); named inventor on a related patent granted in 2025.\\[1pt]
+\textbf{Nanjing University} \hfill \textit{Sep 2017 -- Jul 2021}\\
+BSc Materials Science \& Engineering. GPA 4.6/5.0; top 1\%; National Scholarship; Outstanding Graduate; Jiangsu Province Outstanding Student; MCM/ICM 2020 Honorable Mention (team captain).
+
+\section{SKILLS}
+\begin{tabular}{@{}p{2.5cm}p{14.5cm}@{}}
+\textbf{Programming} & Python \textperiodcentered{} SQL \textperiodcentered{} PySpark \textperiodcentered{} Git \textperiodcentered{} Docker \\[0.5pt]
+\textbf{Modelling} & Statistical Modelling \textperiodcentered{} Causal Inference / PSM \textperiodcentered{} Feature Engineering \textperiodcentered{} Risk Ranking \textperiodcentered{} NLP \\[0.5pt]
+\textbf{Delivery} & MLOps \textperiodcentered{} Feature Stores \textperiodcentered{} Batch Pipelines \textperiodcentered{} Data Validation \textperiodcentered{} Model Monitoring \\[0.5pt]
+\textbf{Decision} & Behavioural Measurement \textperiodcentered{} Targeting \& Prioritisation \textperiodcentered{} Funnel / Cohort Analysis \\[0.5pt]
+\textbf{Languages} & English (TOEFL 104) \textperiodcentered{} Mandarin/Cantonese (Native) \textperiodcentered{} Japanese (JLPT N1) \\
+\end{tabular}
+\end{document}
