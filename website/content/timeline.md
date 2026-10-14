@@ -11,9 +11,9 @@ Draft the timeline milestones and their paired narrative traces for the homepage
 - Open to London — next chapter
 
 ## Source Files
-- `D:\liuguanzhang\Desktop\cv\resume.tex`
-- `D:\liuguanzhang\Desktop\cv\linkedin_profile_backup.md`
-- `D:\liuguanzhang\Desktop\cv\personal-website-product-design.md`
+- `profile/resumes/resume.tex`
+- `profile/linkedin/archive/linkedin_profile_backup.md`
+- `website/docs/personal-website-product-design.md`
 
 ## Status
 Not drafted yet.

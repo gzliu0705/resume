@@ -11,8 +11,8 @@ Short thought blocks that describe working style, intellectual habits, and colla
 Short, quotable statements that express point of view without becoming long-form writing.
 
 ## Source Files
-- `D:\liuguanzhang\Desktop\cv\linkedin_profile_backup.md`
-- `D:\liuguanzhang\Desktop\cv\personal-website-product-design.md`
+- `profile/linkedin/archive/linkedin_profile_backup.md`
+- `website/docs/personal-website-product-design.md`
 - user brainstorming from the personal website discussions
 
 ## Status

@@ -14,8 +14,8 @@ Draft the compact recruiter-facing utility panel for the homepage.
 - email
 
 ## Source Files
-- `D:\liuguanzhang\Desktop\cv\resume.tex`
-- `D:\liuguanzhang\Desktop\cv\linkedin_profile_backup.md`
+- `profile/resumes/resume.tex`
+- `profile/linkedin/archive/linkedin_profile_backup.md`
 - approved memory and website docs
 
 ## Status

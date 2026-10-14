@@ -5,8 +5,8 @@ This file holds the evolving homepage copy draft in approved section order.
 
 ## Layout-Specific Demo Notes
 This draft is adapted for the current homepage demo direction based on:
-- `D:\liuguanzhang\Desktop\cv\website\assets\references\首页.jpg`
-- `D:\liuguanzhang\Desktop\cv\website\assets\references\猫咪参考.jpg`
+- `website\assets\references\首页.jpg`
+- `website\assets\references\猫咪参考.jpg`
 
 The current landing demo should use:
 - a pale off-white background
@@ -31,9 +31,9 @@ The landing section should feel like a visual title page, not a crowded resume.
 
 ## Drafting Rule
 Build from source files first:
-- `D:\liuguanzhang\Desktop\cv\resume.tex`
-- `D:\liuguanzhang\Desktop\cv\linkedin_profile_backup.md`
-- `D:\liuguanzhang\Desktop\cv\personal-website-product-design.md`
+- `profile/resumes/resume.tex`
+- `profile/linkedin/archive/linkedin_profile_backup.md`
+- `website/docs/personal-website-product-design.md`
 
 Do not introduce unsupported claims.
 

@@ -6,7 +6,7 @@ Track the assets needed before design and implementation.
 ## Core Functional Assets
 | Asset | Purpose | Priority | Status | Notes |
 |---|---|---|---|---|
-| Resume PDF | Downloadable resume | must-have for MVP | available | source: `D:\liuguanzhang\Desktop\cv\resume.pdf` |
+| Resume PDF | Downloadable resume | must-have for MVP | needs review | Candidate: `profile/resumes/resume_general_ds.pdf`; confirm approved public version before publishing |
 | LinkedIn URL | recruiter trust and contact path | must-have for MVP | available | use current public profile URL |
 | Email address | direct contact | must-have for MVP | available | `gzliu0705@gmail.com` |
 | Website favicon concept | basic brand identity | useful later | pending | can derive from cat/signal motif |

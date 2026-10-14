@@ -56,4 +56,4 @@ Within 3–5 minutes, a hiring manager or peer should understand:
 
 ## Reference Spec
 Primary website product direction is defined in:
-- `D:\liuguanzhang\Desktop\cv\personal-website-product-design.md`
+- `website/docs/personal-website-product-design.md`

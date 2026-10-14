@@ -104,18 +104,18 @@ Approved homepage structure:
 ## Source-of-Truth Hierarchy
 When drafting or revising website content, use this priority:
 
-1. `D:\liuguanzhang\Desktop\cv\resume.tex`
+1. `profile/resumes/resume.tex`
    - factual truth
    - dates, titles, education, skills baseline, public-safe facts
 
-2. `D:\liuguanzhang\Desktop\cv\linkedin_profile_backup.md`
+2. `profile/linkedin/archive/linkedin_profile_backup.md`
    - polished professional narrative
    - public-facing wording for experience and positioning
 
-3. `D:\liuguanzhang\Desktop\cv\personal-website-product-design.md`
+3. `website/docs/personal-website-product-design.md`
    - website concept, IA, tone, product direction
 
-4. `D:\liuguanzhang\Desktop\cv\self-blog.md`
+4. `website/design/self-blog.md`
    - aesthetic preferences, interaction ideas, supporting notes
 
 Conflict rule:
@@ -170,8 +170,8 @@ When working inside this folder:
   - resume
 
 ## Key Reference Files
-- `D:\liuguanzhang\Desktop\cv\personal-website-product-design.md`
-- `D:\liuguanzhang\Desktop\cv\resume.tex`
-- `D:\liuguanzhang\Desktop\cv\linkedin_profile_backup.md`
-- `D:\liuguanzhang\Desktop\cv\self-blog.md`
+- `website/docs/personal-website-product-design.md`
+- `profile/resumes/resume.tex`
+- `profile/linkedin/archive/linkedin_profile_backup.md`
+- `website/design/self-blog.md`
 - `C:\Users\liuguanzhang\.claude\projects\D--liuguanzhang-Desktop-cv\memory\MEMORY.md`

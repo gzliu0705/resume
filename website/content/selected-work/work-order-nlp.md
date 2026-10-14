@@ -15,8 +15,8 @@ Prepare the half-expanded homepage summary and future case-study material.
 - future case-study notes
 
 ## Source Files
-- `D:\liuguanzhang\Desktop\cv\resume.tex`
-- `D:\liuguanzhang\Desktop\cv\linkedin_profile_backup.md`
+- `profile/resumes/resume.tex`
+- `profile/linkedin/archive/linkedin_profile_backup.md`
 
 ## Constraints
 Use only approved public-safe claims.

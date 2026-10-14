@@ -6,7 +6,7 @@ This document defines where website content should come from and how conflicts s
 ## Source Hierarchy
 
 ### 1. Factual truth
-`D:\liuguanzhang\Desktop\cv\resume.tex`
+Start with `evidence/README.md` and its cited project answers; compare `profile/resumes/resume.tex` as a historical public-resume baseline. The resume alone is not proof that a claim remains current.
 
 Use for:
 - dates
@@ -18,7 +18,7 @@ Use for:
 - public-safe factual claims
 
 ### 2. Professional narrative
-`D:\liuguanzhang\Desktop\cv\linkedin_profile_backup.md`
+Current working draft: `profile/linkedin/linkedin_profile.md`. Historical source for existing website copy: `profile/linkedin/archive/linkedin_profile_backup.md`. Proposed copy is not evidence of what is live online.
 
 Use for:
 - polished public-facing wording
@@ -27,7 +27,7 @@ Use for:
 - longer narrative framing
 
 ### 3. Website structure and direction
-`D:\liuguanzhang\Desktop\cv\personal-website-product-design.md`
+`website/docs/personal-website-product-design.md`
 
 Use for:
 - homepage structure
@@ -37,7 +37,7 @@ Use for:
 - visual and interaction principles
 
 ### 4. Aesthetic and interaction preference notes
-`D:\liuguanzhang\Desktop\cv\self-blog.md`
+`website/design/self-blog.md`
 
 Use for:
 - aesthetic preferences
@@ -48,7 +48,7 @@ Use for:
 ## Conflict Resolution
 If files conflict:
 1. factual source wins over stylistic source
-2. finalized resume and LinkedIn content win over speculative website drafts
+2. check current verified evidence before promoting wording from any resume, LinkedIn working draft, or speculative website draft
 3. public copy must remain confidentiality-safe even if a more specific internal phrasing exists
 
 ## Working Rule

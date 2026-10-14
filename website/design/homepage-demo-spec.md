@@ -4,8 +4,8 @@
 Translate the approved homepage concept into a concrete landing-page demo based on the provided visual references.
 
 Reference files:
-- `D:\liuguanzhang\Desktop\cv\website\assets\references\首页.jpg`
-- `D:\liuguanzhang\Desktop\cv\website\assets\references\猫咪参考.jpg`
+- `website\assets\references\首页.jpg`
+- `website\assets\references\猫咪参考.jpg`
 
 ## Visual Direction for This Demo
 
@@ -114,6 +114,6 @@ Why:
 
 ## Demo Content Mapping Source
 The hero copy in this demo should align with:
-- `D:\liuguanzhang\Desktop\cv\website\content\homepage-copy.md`
-- `D:\liuguanzhang\Desktop\cv\resume.tex`
-- `D:\liuguanzhang\Desktop\cv\linkedin_profile_backup.md`
+- `website\content\homepage-copy.md`
+- `profile/resumes/resume.tex`
+- `profile/linkedin/archive/linkedin_profile_backup.md`
