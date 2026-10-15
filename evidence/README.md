@@ -21,7 +21,8 @@
 | Fanqie 看板约 60% | [ByteDance 项目答复 §1](projects/bytedance/bytedance_project_answers.md) | 内部目标用户的采用率；不等于外部用户增长 |
 | Fanqie 约 40% | [ByteDance 项目答复 §1](projects/bytedance/bytedance_project_answers.md)与 [LinkedIn 工作稿](../profile/linkedin/linkedin_profile.md) | 新通用草稿遵循 LinkedIn，只以业务复盘中团队推广视频锚点链路 App 下载合计的前后各一月观察性差异描述；不是本人独立造成的增量，原始数据未核验 |
 | Qishui 受众饱和 | [ByteDance 项目答复 §2](projects/bytedance/bytedance_project_answers.md) | 观察到锚点链路关联新用户激活下降；不是旧简历写的“激活到注册转化下降”，无已确认 uplift 或 ROI |
-| 职位、任期、所在地及英国工作资格 | [LinkedIn 工作稿](../profile/linkedin/linkedin_profile.md)和 [早期访谈](intake/linkedin_cv.md) | 通用草稿优先沿用 LinkedIn 的 Dongwu 职位/日期与 ByteDance 职位，冲突仍须按真实记录复核；所在地和工作资格需核实，发布 LinkedIn 不等于事实独立核验 |
+| 职位、任期、所在地及英国工作资格 | [LinkedIn 工作稿](../profile/linkedin/linkedin_profile.md)、[早期访谈](intake/linkedin_cv.md)及本人 2026-10-15 关于 MarketCast 初聊的补充 | 职位和任期冲突仍须按真实记录复核；本人新确认目前在北京、计划 2026 年 12 月搬到伦敦、持英国 dependant visa 无需担保，所述到期月份为 2031 年 1 月（具体日期以证件为准）。旧 Fuse 面试稿的 2032 年签证日期不再用于新材料；公开 LinkedIn 不等于各项事实独立核验 |
+| 带项目与经验分享 | 本人 2026-10-15 关于 MarketCast 猎头初聊的补充；[Li Auto 项目答复](projects/li-auto/li_auto_project_answers.md) | 本人确认带领多个项目，曾与组内新人分享工具开发经验；可作为 lead / mentor 问题的例子，但未确认正式下属管理、带教人数或具体新同事的职级，不自行补写 |
 
 ## 新证据如何入库
 

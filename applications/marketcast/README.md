@@ -10,7 +10,8 @@
 | [working/WentworthLiu_Data_Scientist.pdf](working/WentworthLiu_Data_Scientist.pdf) | 当前存档的一页 PDF，与本地编译的 MarketCast 版 SHA-256 一致；本人已确认发给猎头，但实际附件的文件名及是否就是该版尚未核实 |
 | [working/reply_to_alaric.md](working/reply_to_alaric.md) | 原拟回复文本，仅为草稿；本人已与猎头联系，但未提供实际发出的消息，不能把草稿当成发送原文 |
 | [interview/recruiter-call-2026-10-16.md](interview/recruiter-call-2026-10-16.md) | 2026-10-16 猎头初聊准备，不代表会谈已进行 |
+| [interview/recruiter-qa-2026-10-16.md](interview/recruiter-qa-2026-10-16.md) | 猎头标准筛选问题、二次追问与三个项目的回答备稿；不是通话实录 |
 
 **岗位与渠道：**PDF 写明雇主为 MarketCast，岗位是 Data Scientist I — Data Science Consulting；招聘联系人为 Alaric（SearchTribes），JD 给出邮箱 `alaric@searchtribes.com`。本人说猎头已联系，但未提供该次联系的原始消息、平台、日期或猎头身份核实材料；不将 JD 中的联系邮箱等同于已往来记录。
 
-**会前与归档核实：**岗位为 Reading 和／或 London、每周现场 3 天，薪酬上限约 £55k 加福利。本人于 2026-10-15 确认具备无需雇主担保的英国工作资格；该确认不表示目前居住在英国。通话时确认具体通勤／到岗安排、雇主是否已收到简历及后续流程。简历仅突出已有的营销测量、分类、预测、特征工程和流水线经验，不声称做过调查／收视数据、AWS、Streamlit、外部客户交付或带教。待本人确认**实际发出的附件**后，再将当时所用原文件归入 `submitted/` 并记录发送日期、渠道和版本；当前工作稿文件名不能反推出邮件附件名。
+**会前与归档核实：**岗位为 Reading 和／或 London、每周现场 3 天，薪酬上限约 £55k 加福利。本人于 2026-10-15 确认目前在北京，计划同年 12 月搬到伦敦；持有无需雇主担保的英国 dependant visa，本人所述到期月份为 **2031 年 1 月**（具体到期日以证件为准）。通话时确认具体通勤／到岗安排、雇主是否已收到简历及后续流程。本人补充曾带领多个项目，并向组内新人分享工具开发经验；不把这些经历说成正式管理团队或独立交付外部客户项目。简历不声称做过调查／收视数据、AWS、Streamlit。待本人确认**实际发出的附件**后，再将当时所用原文件归入 `submitted/` 并记录发送日期、渠道和版本；当前工作稿文件名不能反推出邮件附件名。
