@@ -1,0 +1,74 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[top=0.56in,bottom=0.56in,left=0.58in,right=0.58in]{geometry}
+\usepackage{enumitem,hyperref,titlesec,array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\hypersetup{colorlinks=true,urlcolor=black,linkcolor=black}
+\pagestyle{empty}
+\titleformat{\section}{\bfseries\normalsize}{}{0em}{}[\vspace{-4pt}\rule{\linewidth}{0.5pt}]
+\titlespacing{\section}{0pt}{7pt}{3pt}
+\setlist[itemize]{leftmargin=1.05em,itemsep=3pt,parsep=0pt,topsep=2pt,label=\textbullet}
+\setlength{\parindent}{0pt}
+\begin{document}
+\fontsize{10pt}{11.8pt}\selectfont
+
+\begin{center}
+{\Large\bfseries WENTWORTH LIU}\\[2pt]
+{\small Open to London opportunities \;$\cdot$\; \href{mailto:gzliu0705@gmail.com}{gzliu0705@gmail.com} \;$\cdot$\; \href{https://www.linkedin.com/in/wentworth-liu-4a4a02413}{linkedin.com/in/wentworth-liu-4a4a02413}}\\[2pt]
+{\small Data Scientist \;$\vert$\; Applied ML, Marketing Measurement \& Decision Science \;$\vert$\; Li Auto \textperiodcentered{} ByteDance}
+\end{center}
+\vspace{-4pt}
+
+\section{SUMMARY}
+Data Scientist combining statistical inference, applied machine learning and engineering to turn complex, ambiguous business problems into decisions teams can use. Works across problem framing, feature engineering, explainable modelling, deployment and monitoring, particularly for rare outcomes and observational data. At ByteDance, built multi-source measurement tools for marketing decisions; at Li Auto, partnered with battery engineering, quality and after-sales teams on longevity interventions, safety prioritisation and reusable ML infrastructure. Brings computational materials research, cross-functional product delivery and UK work authorisation without sponsorship.
+
+\section{EXPERIENCE}
+\textbf{Li Auto} \hfill \textit{Jul 2024 -- Present}\\
+\textit{Data Scientist, Battery Intelligence Department}
+\begin{itemize}
+\item \textbf{Behavioural Risk Scoring \& MLOps.} Built an explainable relative-risk system for rare thermal-runaway investigations, where scarce labels made binary classification unsuitable. Captured 93\% of evaluated cases in the top-ranked 2\% of vehicles, narrowing review from tens of thousands to thousands; the score ranks cases, not calibrated failure probabilities. Applied Mann--Whitney screening and correlation-cluster redundancy control to 1.5k+ vehicle-behaviour features, then built decomposable, directional CDF-based scoring with platform-aware normalisation. Delivered monthly Docker-packaged batch training and scoring with data-quality gates, API publication, audit checks, monitoring and case-driven refresh.
+\item \textbf{Causal Inference \& Cohort-targeted Longevity Strategy.} Turned observational fleet data into cohort-targeted battery-longevity decisions by combining causal effect estimation, state-of-health (SOH) forecasting and OTA strategy evaluation. Used confounder control, propensity-score matching with balance diagnostics, ATT and dose-response estimation to identify actionable behaviour drivers; recursively projected early-life SOH trajectories to identify warranty-risk cohorts. Partnered with BMS, cell-design, performance and after-sales teams to map feasible interventions, assess battery design boundaries and evaluate staged OTA rollout. Six-month matched-cohort and within-vehicle counterfactual evaluations supported a \emph{projection} of tens of millions of RMB in avoided warranty costs for one vehicle model, not realised savings.
+\item \textbf{End-to-End Offline Feature Store.} Built an in-house, department-wide offline Feature Store covering 1.5k+ vehicle-cycle behaviour features, replacing fragmented feature work and cutting feature-development time by approximately 85\%. Designed a Git-controlled YAML feature registry and metadata/lineage model; implemented schema-driven PySpark ODS-to-Hive transformations with temporal alignment and cross-signal aggregation, validated ingestion, historical backfills, monitoring and selective materialisation through internal APIs. Standardised feature definitions across analysis, training, scoring and investigation while reducing duplicated computation and storage.
+\item \textbf{AI-Assisted Risk Intelligence \& Investigation Product.} Turned risk rankings into an evidence-based workbench used by 20+ internal users to analyse 1k+ vehicles monthly. Connected cohort benchmarks, vehicle-level replay, feature explanations, similarity analysis and historical-failure evidence for case review. Led cloud product delivery with AI coding assistance, using a Web/API/asynchronous-worker architecture, StarRocks-backed analytics, governed access and versioned results for reproducible investigations.
+\item \textbf{Confidence-Aware NLP Work-Order Classification.} Built a human-in-the-loop system for 50k+ noisy after-sales work orders across 30+ categories, replacing routine manual classification. Co-designed the label taxonomy with after-sales experts, evaluated expert terms using keyword-level F1, engineered domain-informed TF-IDF features and trained a Random Forest classifier; routed low-confidence cases to expert review and used verified labels for weekly retraining. Automated over 93\% of labelled samples, raising accuracy from 83\% to 96\% within three months (weighted F1 $>0.90$) and replacing roughly 12 manual hours weekly.
+\end{itemize}
+
+\newpage
+\noindent\textbf{WENTWORTH LIU} \hfill \textit{Data Scientist}
+\section{EXPERIENCE (CONTINUED)}
+\textbf{ByteDance} \hfill \textit{May 2023 -- Sep 2023}\\
+\textit{Data Analytics}
+\begin{itemize}
+\item \textbf{Fanqie IP Popularity Model for Promotion Prioritisation.} Built a cloud-deployed daily IP popularity model to identify emerging momentum, benchmark IPs and inform marketing's continued-promotion decisions. Integrated internal and external consumption, dissemination and search signals through automated ETL and data-quality monitoring, combining PCA-derived statistical weights with business-agreed AHP weights. Reached approximately 60\% adoption among target internal users; a business retrospective recorded approximately 40\% higher anchor-tracked app downloads across team-promoted videos in the month after marketing adjusted priorities versus the preceding month. This observational comparison is not an attributed effect of the model or total App growth.
+\item \textbf{Qishui Music Audience Saturation \& Acquisition Targeting.} Diagnosed falling anchor-linked new-user activations as an audience-saturation problem in video-led acquisition. Used funnel-stage analysis and cross-product audience matching to compare installed-user penetration with anchor-linked new-user activation rates by content vertical. Identified saturated audiences and higher-potential verticals; marketing shifted promotion accordingly. No uplift in activations or acquisition efficiency is claimed.
+\end{itemize}
+
+\textbf{Dongwu Securities Co.} \hfill \textit{Dec 2021 -- May 2022}\\
+\textit{Equity Research Analyst}
+\begin{itemize}
+\item Synthesised company fundamentals, competitive positioning, operating performance and market conditions with quantitative stock-price modelling to support short-, medium- and long-term investment recommendations for Harmonic Drive Systems.
+\end{itemize}
+
+\section{EDUCATION}
+\textbf{Nanjing University} \hfill \textit{Sep 2021 -- Jun 2024}\\
+MSc Computational Materials Science. Developed an open-source 3D analysis tool connecting calculated quantum-oscillation orbits to Fermi-surface regions using marching cubes and HDBSCAN; not the author of the original SKEAF software. Published first-author research in \textit{Physical Review B} (2024) and co-first-author research in \textit{Physical Review Materials} (2023); named inventor on a related patent granted in 2025.\\[2pt]
+\textbf{Nanjing University} \hfill \textit{Sep 2017 -- Jul 2021}\\
+BSc Materials Science \& Engineering. GPA 4.6/5.0; top 1\% of cohort; National Scholarship, Outstanding Graduate and Jiangsu Province Outstanding Student; MCM/ICM 2020 Honorable Mention (team captain).
+
+\section{SELECTED RESEARCH}
+\begin{itemize}
+\item \textbf{First-author publication:} ``First-principles studies on the crystal structure and electronic properties of two-dimensional RuO$_2$ and OsO$_2$,'' \textit{Physical Review B} 109, 075411 (2024).
+\item \textbf{Co-first-author publication:} ``Crystal growth, transport, and magnetic properties of antiferromagnetic semimetal Ni$_3$In$_2$Se$_2$ crystals,'' \textit{Physical Review Materials} 7, 084203 (2023).
+\item \textbf{Additional co-authored research:} ``Mode-selective anharmonicity induced by lone-pair electrons in layered oxyselenides,'' \textit{Physical Review B} 109, 024302 (2024); ``Fermiology and Zeeman splitting of the topological metal $\beta$-ReO$_2$ probed by de Haas--van Alphen quantum oscillations under high magnetic fields,'' \textit{Physical Review B} 110, 205109 (2024).
+\item \textbf{Open-source work \& patent:} Built a 3D Fermi-surface analysis tool; named inventor on the related ``Analysis System and Method Based on First-Principles and Quantum Oscillation Testing'' patent (granted 2025; patent holder: Nanjing University).
+\end{itemize}
+
+\section{SKILLS}
+\begin{tabular}{@{}p{2.8cm}p{14.2cm}@{}}
+\textbf{Core} & Python \textperiodcentered{} SQL/HiveSQL \textperiodcentered{} PySpark \textperiodcentered{} Git \textperiodcentered{} Docker \textperiodcentered{} Machine Learning \\[2pt]
+\textbf{Methods} & Statistical Modelling \textperiodcentered{} Causal Inference / PSM / ATT \textperiodcentered{} Risk Ranking \textperiodcentered{} Feature Engineering \textperiodcentered{} NLP / Random Forest \\[2pt]
+\textbf{ML delivery} & MLOps \textperiodcentered{} Feature Registry / Store \textperiodcentered{} Batch Pipelines \textperiodcentered{} Data-quality Gates \textperiodcentered{} APIs \textperiodcentered{} Model Monitoring \\[2pt]
+\textbf{Product} & Web/API Workflows \textperiodcentered{} Asynchronous Analysis \textperiodcentered{} StarRocks \textperiodcentered{} Versioned Outputs \textperiodcentered{} Cross-functional Delivery \\[2pt]
+\textbf{Languages} & English (TOEFL 104) \textperiodcentered{} Mandarin/Cantonese (Native) \textperiodcentered{} Japanese (JLPT N1) \\
+\end{tabular}
+\end{document}

@@ -1,0 +1,56 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[top=0.48in,bottom=0.48in,left=0.55in,right=0.55in]{geometry}
+\usepackage{enumitem,hyperref,titlesec,array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\hypersetup{colorlinks=true,urlcolor=black,linkcolor=black}
+\pagestyle{empty}
+\titleformat{\section}{\bfseries\normalsize}{}{0em}{}[\vspace{-4pt}\rule{\linewidth}{0.5pt}]
+\titlespacing{\section}{0pt}{4pt}{1pt}
+\setlist[itemize]{leftmargin=1.05em,itemsep=2pt,parsep=0pt,topsep=1pt,label=\textbullet}
+\setlength{\parindent}{0pt}
+\begin{document}
+\fontsize{9.8pt}{11.2pt}\selectfont
+
+\begin{center}
+{\Large\bfseries WENTWORTH LIU}\\[2pt]
+{\small UK work authorisation (no sponsorship required) \;$\cdot$\; \href{mailto:gzliu0705@gmail.com}{gzliu0705@gmail.com} \;$\cdot$\; \href{https://www.linkedin.com/in/wentworth-liu-4a4a02413}{linkedin.com/in/wentworth-liu-4a4a02413}}\\[2pt]
+{\small Data Scientist \;$\vert$\; Marketing Measurement, Applied ML \& Data Products}
+\end{center}
+\vspace{-4pt}
+
+\section{SUMMARY}
+Data Scientist connecting multi-source measurement and machine learning to decisions teams can use. At ByteDance, integrated consumption, dissemination and search signals into a daily marketing-prioritisation model and analysed audience saturation to guide promotion. At Li Auto, owned feature engineering, classification, forecasting and monitored scoring workflows with engineering and business teams. Careful about data quality, model evaluation and what observational results can---and cannot---show.
+
+\section{EXPERIENCE}
+\textbf{Li Auto} \hfill \textit{Jul 2024 -- Present}\\
+\textit{Data Scientist, Battery Intelligence Department}
+\begin{itemize}
+\item \textbf{Behavioural Risk Scoring \& MLOps.} Built an explainable risk-ranking system for rare thermal-runaway investigations, capturing 93\% of evaluated cases in the top-ranked 2\% of vehicles; the score ranks cases, not failure probabilities. Screened 1.5k+ features with Mann--Whitney tests and correlation controls, then delivered Docker-packaged batch scoring with data-quality gates, API publication, monitoring and case-driven refresh.
+\item \textbf{Forecasting \& Cohort Decisions.} Combined propensity-score matching, ATT and dose-response analysis with recursive state-of-health forecasting to identify warranty-risk cohorts and evaluate battery-longevity interventions. Worked with BMS, performance and after-sales teams on staged OTA strategy evaluation; six-month matched-cohort and counterfactual analyses supported a \emph{projection} of tens of millions of RMB in avoided warranty costs for one model, not realised savings.
+\item \textbf{Reusable Feature Engineering.} Built a department-wide offline Feature Store for 1.5k+ vehicle-cycle behaviour features, cutting feature-development time by approximately 85\%. Created a Git-managed YAML registry, schema-driven PySpark ETL, temporal alignment, validation, backfills and model-ready API exports, standardising features across analysis, training and scoring.
+\item \textbf{NLP Classification \& Human Review.} Trained a Random Forest on domain-informed TF-IDF features for 50k+ after-sales work orders across 30+ categories. Routed low-confidence predictions to expert review and retrained on verified labels; automated over 93\% of labelled samples, raising accuracy from 83\% to 96\% in three months (weighted F1 $>0.90$).
+\end{itemize}
+
+\textbf{ByteDance} \hfill \textit{May 2023 -- Sep 2023}\\
+\textit{Data Analytics}
+\begin{itemize}
+\item \textbf{Marketing Measurement \& Promotion Prioritisation.} Built a cloud-deployed daily IP popularity model integrating consumption, dissemination and search signals via automated ETL and data-quality monitoring. Combined PCA-derived weights with business-agreed AHP weights to inform promotion decisions; reached approximately 60\% adoption among target internal users. A business retrospective observed approximately 40\% higher anchor-tracked downloads across team-promoted videos in the month after marketing adjusted priorities; this is not a causal effect attributed to the model.
+\item \textbf{Audience Saturation \& Acquisition Targeting.} Compared installed-user penetration and anchor-linked new-user activations by content vertical using funnel analysis and cross-product audience matching. Identified saturated and higher-potential audiences; marketing adjusted promotion accordingly, without a verified uplift claim.
+\end{itemize}
+
+\section{EDUCATION}
+\textbf{Nanjing University} \hfill \textit{Sep 2021 -- Jun 2024}\\
+MSc Computational Materials Science. Built an open-source 3D Fermi-surface analysis tool; first author in \textit{Physical Review B} (2024), co-first author in \textit{Physical Review Materials} (2023); named inventor on a related patent granted in 2025.\\[1pt]
+\textbf{Nanjing University} \hfill \textit{Sep 2017 -- Jul 2021}\\
+BSc Materials Science \& Engineering. GPA 4.6/5.0; top 1\%; National Scholarship; Outstanding Graduate; Jiangsu Province Outstanding Student; MCM/ICM 2020 Honorable Mention (team captain).
+
+\section{SKILLS}
+\begin{tabular}{@{}p{2.5cm}p{14.5cm}@{}}
+\textbf{Programming} & Python \textperiodcentered{} SQL/HiveSQL \textperiodcentered{} PySpark \textperiodcentered{} Git \textperiodcentered{} Docker \\[0.5pt]
+\textbf{Modelling} & Classification / Random Forest \textperiodcentered{} Forecasting \textperiodcentered{} Causal Inference / PSM \textperiodcentered{} Feature Engineering \textperiodcentered{} Model Evaluation \\[0.5pt]
+\textbf{Delivery} & MLOps \textperiodcentered{} Feature Stores \textperiodcentered{} Batch Pipelines \textperiodcentered{} Data Validation \textperiodcentered{} Model Monitoring \\[0.5pt]
+\textbf{Decision} & Marketing Measurement \textperiodcentered{} Audience Analysis \textperiodcentered{} Targeting \& Prioritisation \textperiodcentered{} Cross-functional Delivery \\[0.5pt]
+\textbf{Languages} & English (TOEFL 104) \textperiodcentered{} Mandarin/Cantonese (Native) \textperiodcentered{} Japanese (JLPT N1) \\
+\end{tabular}
+\end{document}
