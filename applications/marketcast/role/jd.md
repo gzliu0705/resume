@@ -1,25 +1,25 @@
 # MarketCast — Data Scientist I, Data Science Consulting
 
-**来源：**本人于 2026-10-15 提供的猎头 JD [原始 PDF](DS%20I%20DSaaS.pdf)。以下是为检索整理的要点，不是逐字转录；PDF 提取时部分英文字母排版异常，如与原件不同，以 PDF 为准。
+**Source:** The recruiter JD [original PDF](DS%20I%20DSaaS.pdf) provided by the candidate on October 15, 2026. These are searchable notes, not a verbatim transcription. Some letters were corrupted during PDF text extraction; if anything differs, defer to the original PDF.
 
-## 基本信息
+## Key details
 
-- 雇主：MarketCast；招聘联系方：Alaric / SearchTribes（JD 所列邮箱：`alaric@searchtribes.com`）。
-- 地点：Reading 和／或 London，混合办公，每周现场 3 天。
-- 薪酬：最高约 £55k，另有福利。
-- JD 说明申请人须有**无需雇主担保的英国工作资格**。
+- Employer: MarketCast. Recruiter contact: Alaric / SearchTribes (email listed in the JD: `alaric@searchtribes.com`).
+- Location: Reading and/or London, hybrid, three days on site each week.
+- Compensation: up to approximately £55k, plus benefits.
+- The JD requires the **right to work in the UK without employer sponsorship**.
 
-## 工作内容
+## Responsibilities
 
-- 在 Python、SQL 和 AWS 环境中探索、关联调查、电视收视及交易／刷卡数据。
-- 独立规划并推进客户项目；构建分类、回归、预测和分群等监督／无监督模型，进行特征工程，避免数据泄漏和过拟合。
-- 向客户洞察与分析负责人解释方法和结果，使用 Streamlit / Python 制作报告和可视化；支持初级同事，维护和改善机器学习流水线。
-- 团队专注营销效果等问题，包括将广告表现与真实业务结果关联。
+- Explore and join survey, TV-viewership and transactional/card-spend data using Python and SQL on AWS.
+- Scope, plan and lead client projects; develop supervised and unsupervised models for classification, regression, forecasting and segmentation, engineering features while guarding against leakage and overfitting.
+- Explain methods and findings to client insights and analytics leads; create reports and visualisations in Streamlit and Python, support junior colleagues, and maintain ML pipelines.
+- Work on marketing-effectiveness questions, including how advertising performance relates to business outcomes.
 
-## 人选要求
+## Candidate requirements
 
-- 约 2–4 年数据科学经验，能够独立管理项目；扎实的机器学习基础，包括随机森林、梯度提升、评估指标和交叉验证。
-- 熟练使用 Python、SQL、pandas 处理大型数据集，能向非技术人员解释分析结果；有客户沟通经验更好，内部利益相关者经验亦可。
-- 调查数据或数据工程经验、AWS 或生成式 AI 经验属于加分项；需有数学、统计、物理、心理学、社会学、经济、工程、计算机等定量学科学位，硕士及以上加分。
+- Approximately 2–4 years of data science experience and independent project management; sound ML fundamentals, including random forests, gradient boosting, evaluation metrics and cross-validation.
+- Proficiency in Python, SQL and pandas with large datasets; the ability to explain data science to non-technical audiences. Client-facing experience helps, but work with internal stakeholders also counts.
+- Survey-data or data-engineering experience, AWS or generative-AI experience are bonuses. A degree in a quantitative subject (such as mathematics, statistics, physics, psychology, sociology, economics, engineering or computer science) is required; a master's or higher is a plus.
 
-PDF 末尾提出通过向 Alaric 发送简历或 LinkedIn 资料开启沟通；这只是 JD 的申请说明，**不代表本人已发送**。PDF 中关于公司规模、客户和产品的介绍属于招聘方陈述，未在本档案中独立核实。
+The PDF suggests starting a conversation by sending Alaric a CV or LinkedIn profile. That is the JD's instruction, **not evidence that the candidate had sent anything when the JD was archived**; the candidate later confirmed sending a CV to the recruiter. The PDF's claims about MarketCast's size, clients and products are the recruiter's statements and have not been independently verified in this file.

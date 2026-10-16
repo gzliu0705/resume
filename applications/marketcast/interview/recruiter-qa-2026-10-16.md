@@ -1,95 +1,118 @@
-# MarketCast / SearchTribes — 猎头初聊问答卡
+# MarketCast — Recruiter Screening Answers
 
-**用途：**配合[自我介绍与三段项目故事](recruiter-call-2026-10-16.md)练习；先回答问题，不抢着把所有故事讲完。预计通话 2026-10-16 17:45，**时区仍需按邀请核实**。以下英文是备稿，不是已发生的对话。岗位条件来自[猎头 JD](../role/DS%20I%20DSaaS.pdf)；个人事实来自[一页简历](../source/WentworthLiu_MarketCast_Data_Scientist.tex)、[证据索引](../../../evidence/README.md)及本人此次补充。
+**Use:** Keep these answers conversational. The keyword chains are prompts to remember silently; don't read them aloud. The [call guide](recruiter-call-2026-10-16.md) has the opening, introduction, stories and closing. These are draft answers, not a record of the call.
 
-## 标准筛选问题：先用 1–3 句回答
+## Motivation and fit
 
-### 1. Why are you looking, and why now?
+### Why are you looking now?
 
-> I'm based in Beijing and plan to move to London in December. I've enjoyed leading data science projects at Li Auto, but I'd like to apply what I've learned to a broader range of business questions. The marketing-measurement focus here also connects with the Fanqie project I enjoyed at ByteDance.
+**Keyword chain: London move → Li Auto experience → New questions.**
 
-**可能追问：Why December? / Could you start earlier?** 搬迁月份已确定，具体日期与合同通知期未提供；回答：“December is my planned relocation month. I can confirm an exact start date once I've checked my notice period and the practical arrangements.” 不承诺未核实的提前到岗。
+> I'm currently based in Beijing, and I'm planning to move to London in December. I've enjoyed leading data science projects at Li Auto. For my next step, I'd like to apply that experience to a wider range of business questions, especially marketing questions like the ones I worked on at ByteDance.
 
-### 2. Why this role / MarketCast?
+**If asked when you can start:** “December is when I'm planning to move. I can give you a firm start date once I've checked my notice period and relocation arrangements.”
 
-> The JD's mix of marketing measurement, varied data and applied modelling stood out to me. At ByteDance I saw a marketing team use a multi-source measurement tool to decide which IPs to keep promoting; at Li Auto I built more rigorous modelling and reusable ML workflows. This role brings those two sides together.
+### Why this role?
 
-**可能追问：Have you measured advertising's causal impact?** “I supported content-promotion decisions with observational signals; I wouldn't call that an incrementality experiment. I'd be interested in learning how this team links advertising to business outcomes.” 不把番茄 40% 前后对比当增量实验。
+**Keyword chain: Marketing again → Varied data → Models people use.**
 
-### 3. What is your experience with Python, SQL and large datasets?
+> The mix of marketing measurement and applied modelling caught my attention. At ByteDance, I built a tool that helped marketers compare what to promote. At Li Auto, I learned a lot about making models explainable and reliable enough for teams to use regularly. I'd like to bring those experiences together here.
 
-> I use Python and SQL in my data science work, and built PySpark pipelines and a Feature Store for vehicle-behaviour features at Li Auto. I've also integrated data from multiple sources into a daily model and dashboard at ByteDance. I'm happy to walk through one of those workflows.
+**If asked about advertising incrementality:** “My Fanqie work supported content-promotion choices using observational signals; it wasn't an experiment measuring advertising lift. I'd be interested in learning how this team evaluates impact.”
 
-**可能追问：How strong are you in pandas?** CV 未单列 pandas 的实战例子；按本人实际使用经验回答，**不要从 Python/PySpark 自动推断 pandas 熟练程度**。
+## Experience
 
-### 4. Can you lead projects or mentor others?
+### How technical is your data work?
 
-> Yes. I've led several projects at Li Auto, including risk-ranking and Feature Store work, taking them from the initial question through to something teams could use. I've also shared my tool-development experience with newer colleagues in my group.
+**Keyword chain: Python and SQL → PySpark → Daily products.**
 
-**可能追问：How many direct reports / what mentoring did you do?** 可描述实际分享过的工具设计与开发方法；**正式汇报关系、人数和活动频率均未提供**，不要编数字或把带项目说成担任团队经理。若 NG 指应届生且属实，再用 *new graduates*。
+> I use Python and SQL in my data science work. At Li Auto, I built PySpark feature pipelines and an offline Feature Store. At ByteDance, I brought multiple data sources into a daily model and dashboard. I'm happy to walk through either example.
 
-### 5. Are you comfortable presenting to clients and non-technical stakeholders?
+### Have you led or mentored others?
 
-> I've explained modelling results and decision tools to engineering, quality, after-sales and marketing colleagues. My experience so far has been mainly with internal stakeholders, not direct external-client delivery. I'd be keen to develop that client-facing side of the role.
+**Keyword chain: Project ownership → Shared tools → Newer colleagues.**
 
-**可能追问：Give me one example.** “For Fanqie, the result was a daily measure and dashboard the marketing team could use to compare IPs, not just a model score. At Li Auto, an explainable ranking helped teams decide which cases to investigate first.”
+> I've led several projects at Li Auto from the initial problem through to delivery, including risk ranking and the Feature Store. I've also shared what I've learned about building tools with newer colleagues in the group. That was project leadership and knowledge-sharing, rather than formal people management.
 
-### 6. Have you worked with surveys, TV viewership, card spend, AWS or Streamlit?
+**If asked for a headcount or a mentoring example:** Give an actual number or specific tool-sharing session only if you can verify it; do not invent direct reports.
 
-> I haven't worked directly with those datasets or tools in the experience described on my CV. My closest experience is integrating signals with different definitions, building data-quality checks and delivering models through repeatable pipelines. I'd be ready to learn the team's specific data and stack.
+### Are you comfortable with clients and non-technical stakeholders?
 
-**可能追问：Would the learning curve be a problem?** “The domain and tools would be new to me, but the process of checking data definitions, validating models and making outputs usable is familiar.” 不声称 AWS/Streamlit 已投入生产。
+**Keyword chain: Internal partners → Decision tool → Client-facing growth.**
 
-### 7. Where are you based, do you need sponsorship, and when can you start?
+> I've worked closely with marketing, engineering, quality and after-sales colleagues, and I try to explain a model in terms of the decision it helps them make. Most of that experience has been with internal teams. Working directly with external clients is something I'd like to develop.
 
-> I'm currently in Beijing and plan to move to London in December 2026. I hold a UK dependant visa valid until January 2031 and don't need sponsorship. I can confirm an exact start date once I've checked my notice period and relocation arrangements.
+**If asked for an example:** “For Fanqie, I turned the index into a dashboard the marketing team could use to compare IPs. At Li Auto, I made risk scores explainable so specialists could decide which vehicles to investigate.”
 
-**可能追问：Can you be in Reading / London three days a week?** “I'd like to confirm which office the three days would be based in and the practical arrangements around my December move before committing to a specific schedule.” 签证**具体到期日以本人证件为准**；不引用旧 Fuse 材料的 2032 年日期。
+### Have you used surveys, TV data, card data, AWS or Streamlit?
 
-### 8. What compensation are you looking for?
+**Keyword chain: Honest gap → Transferable workflow → Learn the stack.**
 
-> I saw the JD mentions up to £55k plus benefits. Could you confirm the base-salary range and whether there is a bonus or other compensation? I'd like to understand the scope and location before settling on a figure.
+> I haven't worked directly with those datasets or tools in the projects on my CV. I have combined data from different sources, checked definitions and quality, and delivered cloud-deployed models and dashboards. The datasets and tools would be new, but that way of working is familiar.
 
-**可能追问：I need a number now.** 提前填写本人真实可接受范围：**[目标 £____–£____；底线 £____]**。不要把 JD 的 “up to £55k” 当作已确认的报价，也不要临时编数字。
+Answer questions about specific tools such as pandas from your actual experience; Python or PySpark alone does not establish it.
 
-### 9. Where else are you interviewing? Do you have other offers?
+## Logistics
 
-> I'm exploring roles that fit my move to London and the kind of data science work I want to do. For any active interview process or offer, I can give you an accurate update on its stage and timing.
+### Where are you based, and can you work in the UK?
 
-**会前补齐：**正在面试的公司／阶段 **[本人填写]**；是否有 offer **[本人填写]**。不要把尚未投递的工作稿说成已在面试，也不要凭空宣称有 offer。
+**Keyword chain: Beijing → London in December → Dependant visa → Start date.**
 
-### 10. What would you need to know before going forward?
+> I'm in Beijing now and planning to move to London in December 2026. I hold a UK dependant visa valid until January 2031, so I don't need sponsorship. I'll confirm an exact start date once I've checked my notice period and moving plans.
 
-> I'd like to understand whether my CV has already been shared with MarketCast, what this role would own in the first few months, and whether the three office days would be in Reading or London. It would also help to know the interview stages and salary structure.
+**If asked about three days in the office:** “Could you clarify whether that would be in Reading or London? I'd like to check the practical arrangement around my move before committing to a schedule.”
 
-**可能追问：May I submit your CV now?** “Could you confirm the exact role, location and version of my CV you'd submit? I'd like us to be aligned before it goes to MarketCast.” 本人已把简历发给猎头，**不等于已确认雇主收到**。
+### What salary are you looking for?
 
-## 项目追问：挑一条讲，别把三个项目串成技术报告
+**Keyword chain: JD ceiling → Full package → Your range.**
 
-**Fanqie — How did the model influence a decision?**
+> I saw the role is advertised at up to £55k plus benefits. Could you tell me the range for this level and what else is included? I'd like to understand the role and location before giving you a precise figure.
 
-> I combined consumption, dissemination and search signals into a daily popularity measure. I used PCA-derived statistical weights alongside weights agreed with the business team, and the dashboard helped them compare IPs and adjust which ones received continued promotion. The marketing team made the spending decisions; I built the measurement tool.
+**If pressed for a number:** Give a range you've actually decided you would accept. Write it down beforehand: **[target £____–£____; minimum £____]**.
 
-**Fanqie — Did your model cause the roughly 40% increase on your CV?**
+### Where else are you interviewing?
 
-> No. That figure came from a business retrospective comparing the team's anchor-tracked app downloads across promoted videos before and after it changed priorities. It's an observational month-on-month comparison, not a causal lift attributable to my model or an increase in total app downloads.
+**Keyword chain: Relevant search → Actual stages → Timelines.**
 
-**Li Auto — Why ranking rather than a binary classifier?**
+> I'm looking at data science roles that fit my move and the kind of work I want to do. I can give you an accurate update on any active processes and their timelines.
 
-> The failure events were extremely rare, and the real decision was which vehicles to investigate first, not whether I could claim a precise probability of failure. I built an explainable relative-risk ranking; in the evaluation, 93% of cases were within the top-ranked 2% of vehicles. That isn't a calibrated failure probability.
+Only name real applications, interview stages or offers; don't present unsent drafts as active processes.
 
-**Li Auto — What did you personally build in the Feature Store?**
+### What do you need to know before moving forward?
 
-> I designed the feature definitions and Git-managed YAML registry, and built PySpark transformations with temporal alignment, validation and model-ready export. The point was to reuse consistent features across analysis, training and batch scoring. Feature-development time fell by about 85%; that's not an overall productivity or model-accuracy figure.
+**Keyword chain: Scope → Office → Process → CV status.**
 
-**Li Auto — How do these projects translate to this consulting role?**
+> I'd like to understand what I'd own in the first few months, whether the office days are in Reading or London, and what the interview process looks like. Has my CV already been shared with MarketCast?
 
-> Fanqie gave me a real marketing decision to support; Li Auto taught me how to make modelling explainable and data work repeatable. I would bring those habits to new questions and datasets, while being clear that external-client delivery is an area I'd grow into.
+**If asked to submit your CV:** “Could we confirm the exact role, location and version of my CV you'd send?” Sending a CV to a recruiter does not establish that the employer received it.
 
-## 会前必填 / 核对
+## Short project follow-ups
 
-1. 合同通知期、12 月具体搬迁安排、最早可到岗日期：**[本人填写]**。
-2. 薪酬目标及底线、是否接受 Reading 通勤：**[本人填写]**。
-3. 目前其他面试／offer 的真实阶段：**[本人填写]**。
-4. 签证到期的**具体日**与工作资格表述：核对本人证件；本稿仅按本人提供的 **2031 年 1 月**记月份。
-5. 确认会议邀请的日期、17:45 所属时区、会议链接及实际发送给猎头的附件版本。
+For a fuller story, choose the relevant [Fanqie](fanqie-hiring-manager-followups.md) or [Li Auto](li-auto-risk-ranking-followups.md) page rather than answering every technical question at once.
+
+**Fanqie — What was your contribution?** **Chain: Signals → Pipeline and cloud model → Dashboard → Marketers decide.**
+
+> I defined the popularity signals, built the daily data pipeline and cloud-deployed model, and put the results into a dashboard. It helped marketers compare IPs. They made the final promotion decisions.
+
+**Fanqie — Did the model cause 40% growth?** **Chain: Tracked downloads → Before/after → Not causal.**
+
+> I wouldn't claim that. A business review found about 40% more anchor-tracked downloads across the team's promoted videos in the month after it changed priorities than in the previous month. That's an observed difference, not a measured effect of my model or a change in total app downloads.
+
+**Li Auto — Why ranking?** **Chain: Rare cases → My Feature Store → Investigate first → Explain reasons.**
+
+> With such rare events, a yes-or-no answer would suggest more certainty than we have. The real decision is which vehicles to investigate first. I used vehicle-behaviour features from the Feature Store I built to create a ranking that specialists can inspect and challenge.
+
+**Li Auto — What does 93% mean?** **Chain: Earlier ranking → Later failures → Coverage, not probability.**
+
+> Looking back at evaluated vehicles that failed later, 93% had been in the top 2% of an earlier monthly ranking. It tells us how many of those later cases the shortlist covered, not how likely any top-ranked vehicle was to fail.
+
+**Feature Store — What did you build?** **Chain: Shared features → Risk ranking → Reuse → Time saved.**
+
+> I built a shared source of vehicle-behaviour features, including ones I used in the risk-ranking model. I managed their definitions in Git and used PySpark to produce consistent, time-aligned data. Teams could reuse the features for analysis, training and scoring. Feature-development time dropped by about 85%.
+
+## Check privately before speaking
+
+- Exact visa expiry date, relocation date, notice period and earliest possible start; feasibility of commuting to Reading.
+- Target salary and minimum; true stages of other interviews and offers; version of the CV actually sent.
+- Confirm the meeting's time zone and link. The JD gives “up to £55k”; it is not a promised offer.
+- Treat the ~40% as an observational tracked-download comparison and 93% as coverage of evaluated later-failure cases in an earlier ranking. Neither is a causal lift or an individual failure probability.

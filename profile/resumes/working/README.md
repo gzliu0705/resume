@@ -13,6 +13,10 @@
 - **有意不沿用旧口径：**ClearScore 的 `historical cases` 与 Fuse 的 `newly observed failures` 不一致，母版只写 `evaluated cases`；Fuse 的工单 `15k+ / 85%` 与较新的 `50k+ / 83%` 不一致；ByteDance 的 `40% consumption growth / key IP campaign` 与较新的团队推广视频锚点下载月度观察不一致。旧版 Qishui 的 `activation-to-registration conversion` 已被本人纠正，也不写进母版。
 - 母版是内容储备稿，细节多于一页投递版。简历更新后**只同步已确认事实到未来的衍生稿**，已投递的 PDF 保持历史原貌；有冲突的公开数字及任期先按下列清单核实。
 
+## 2026-10-16 项目所有权补充
+
+- 双页母版与一页通用版补充本人确认的理想汽车项目主导、从问题定义到模型/系统交付的端到端责任；风险排序明确使用本人建设的部门级 Feature Store 特征。保留原项目方法、指标及其口径，没有将项目主导写成人员管理。已投递岗位的 PDF 不随本轮改动。
+
 ## 发出前需要本人核实
 
 1. 本稿依 LinkedIn 保留 Dongwu `Equity Research Analyst / Dec 2021 -- May 2022`、ByteDance `Data Analytics`；与岗位简历中的 Intern / Mar 2022 版本冲突，发出前请按真实任职记录确认，**未擅自改成中性职位或年份**。

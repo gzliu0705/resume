@@ -1,6 +1,6 @@
 # LinkedIn 个人主页完整工作稿
 
-更新日期：2026-10-13  
+本地工作稿更新日期：2026-10-16（本轮新增项目所有权描述；不代表 LinkedIn 线上已同步）
 对照材料：`snapshots/linkedin_1010.pdf`、`applications/fuse/submitted/WentworthLiu_CV.pdf`、`applications/clearscore/submitted/WentworthLiu_ClearScore_Data_Scientist_Final_2026-09-24.pdf`。
 
 **2026-10-14 本人补充：**2026-10-13 的 LinkedIn 修改已发布。下方“建议稿”“尚未核实已发布”“待确认”等是写作当时的历史注记，不能据此断言目前未发布；但发布与项目数字、任职日期、所在地等事实已经核实是两回事。2026-10-10 导出 PDF 早于这些修改，不能拿它验证修改后的线上栏目细节。
@@ -21,17 +21,17 @@
 
 ## About / Summary
 
-**状态：最新建议稿；已同意「定位 + 解决的问题 + 有成果的证据」这一方向，尚未核实已发布。**
+**状态：2026-10-16 增补项目端到端负责与 Feature Store → 风险排序的联系；仅更新本地工作稿，尚未核实线上是否同步。**
 
-I’m a Data Scientist who combines statistical inference, applied machine learning and engineering to turn complex, ambiguous business problems and data into decisions teams can use. My work connects rigorous analysis with production delivery, particularly where rare outcomes, observational data or fragmented signals make straightforward modelling inadequate.
+I’m a Data Scientist who leads projects from an ambiguous question to a tool people can use. I combine statistical inference, applied machine learning and engineering, especially when rare outcomes, observational data or fragmented signals make straightforward modelling unreliable.
 
-At Li Auto, I used causal analysis to distinguish actionable battery-longevity drivers from confounding and inform strategies with tens of millions of RMB in projected warranty savings for a single vehicle model. To help teams investigate rare safety failures, I built an explainable risk-ranking workflow that captured 93% of evaluated cases within the highest-risk 2% of vehicles, focusing after-sales review where it matters most. I also built department-wide offline feature infrastructure that reduced feature-development time by approximately 85% and made analysis and scoring reusable across battery platforms.
+At Li Auto, I’ve led battery-data projects end to end, from defining the problem to delivering systems used by engineering and after-sales teams. I built a department-wide offline Feature Store from scratch, then used its vehicle-behaviour features in an explainable ranking to help specialists decide which vehicles to investigate first. In a retrospective review, 93% of evaluated vehicles that failed later were in the top 2% of an earlier monthly ranking; this is investigation coverage, not a failure probability. The Feature Store also cut feature-development time by approximately 85%. For battery longevity, I led causal analysis and strategy evaluation that supported a projection of tens of millions of RMB in avoided warranty costs for one vehicle model, not realised savings.
 
 At ByteDance, I built multi-source content measurement tools that reached approximately 60% internal dashboard adoption and informed campaign and resource-allocation decisions. I bring a computational materials science research background and experience taking statistical models and data systems into cross-functional use.
 
 I’m seeking Data Scientist opportunities in London and am authorised to work in the UK without employer sponsorship.
 
-> **待确认：**两份定制简历对 93% 指标的样本口径分别写为「新观察到的」与「历史」案例。当前草稿仅写 `evaluated cases`，定稿时应核实准确口径。Fuse 的项目证据没有给出安全风险项目可单独量化的财务节省额；ClearScore 草稿只提到减少不必要的电池更换成本，不能把寿命项目的**单车型预测节省**套用到安全项目。约 85% 指特征开发时间／周期，约 60% 指 ByteDance 内部看板采用率。英国工作资格措辞依据 `applications/fuse/role/application_brief.md` 和 ClearScore 简历；发布前请核对实际 UKVI 状态与当前签证条件，不公开签证类型或到期日。
+> **待确认：**93% 在此表述为对随后失效的评估车辆、回看更早月度排序时的前 2% 覆盖率；训练历史、时间截点和样本口径仍需核对，勿称为独立时间留出实验或个体失效概率。安全项目没有独立的已确认财务节省额；寿命项目的**单车型预测节省**不能套用到安全项目。约 85% 指特征开发时间／周期，约 60% 指 ByteDance 内部看板采用率。英国工作资格表述发布前请核对实际 UKVI 状态与签证条件，不公开签证类型或到期日。
 
 ## Experience
 
@@ -41,35 +41,35 @@ I’m seeking Data Scientist opportunities in London and am authorised to work i
 - **Location:** Beijing, China
 - **Department (按简历补充背景，PDF 职位栏未显示):** Battery Intelligence Department
 
-**状态：以已优化 CV 为母版，尚未更新到 LinkedIn。**
+**状态：2026-10-16 已更新本地建议稿；本轮新描述是否已同步至 LinkedIn 线上未核实。**
 
 > **工作原则（已确认）：**Experience 不另行“再创作”。以已定稿的 CV bullet 为事实和措辞母版，但按 LinkedIn 阅读顺序重排为：**业务问题／目标 → 方案与关键方法 → 结果与业务价值**。只做这一必要的结构化处理、统一英式拼写和控制单条长度；不改变项目问题、技术路径、成果逻辑或公开口径。
 >
 > **建议的母版优先级：**以 `applications/clearscore/working/WentworthLiu_ClearScore_Data_Scientist_Final.md` 的 Li Auto 5 条为主；当 Fuse 简历在保密口径或系统架构表述上更完整时，只补充其已明确写出的内容。任何两个版本之间的数字或验证口径差异，先标注并由用户确认，不能由助手自行折中改写。
 
-**第 1 条：Behavioural Risk Scoring & MLOps — LinkedIn 结构化稿，待确认**
+**第 1 条：Behavioural Risk Scoring & MLOps — 2026-10-16 更新的 LinkedIn 结构化稿，待确认**
 
-▎**Behavioural Risk Scoring & MLOps.** Built an explainable relative-risk scoring system for thermal-runaway prioritisation under an approximately 1:40,000 class imbalance. Captured 93% of historical cases within the top-ranked 2% of vehicles, narrowing investigation and replacement candidates from tens of thousands to thousands. Used statistical feature selection and redundancy control across 1.5k+ vehicle-behaviour features, then built a decomposable, distribution-based risk score with cross-platform normalisation; productionised monthly scoring in a Docker-packaged pipeline with API delivery, validation, monitoring and case-driven refresh.
+▎**Safety Risk Ranking & MLOps** — *0-to-1 Technical Lead*. Led the end-to-end development of an explainable ranking to prioritise rare thermal-runaway investigations. Built the score using historical cases and vehicle-behaviour features from the Feature Store I created; used statistical feature selection, redundancy control and platform-aware normalisation. In retrospective review, 93% of evaluated vehicles that failed later appeared in the top 2% of an earlier monthly ranking. Delivered monthly batch scoring with API publication, validation and monitoring so specialists could inspect the evidence; the ranking is not a failure probability or an automatic replacement decision.
 
-> **来源与待确认：**上述内容以 ClearScore 定稿中的问题、方法、交付形式和结果为依据；risk score 是相对风险排序，不是故障概率。`approximately 1:40,000` 来自 ClearScore 定稿；如该比例不适合公开，请改回 `extreme class imbalance`。Fuse 的对应版本将 `93%` 写成 newly observed failure cases，ClearScore 写 historical cases；当前保留 ClearScore 的 `historical cases`。若你确认这个口径，LinkedIn 可直接粘贴这一整条。
+> **来源与待确认：**项目主导和 Feature Store 数据来源按本人补充更新；风险分是相对排序，不是故障概率。93% 指在更早月度评分中落入前 2% 的、随后发生故障的评估样本覆盖率；正式称为独立时间留出验证前，仍需核查评分时点、训练历史和样本口径。旧稿的约 1:40,000 比例未核实分母与时间窗口，故不在本稿引用。未核实线上是否已按此修改。
 
 **第 2 条：Causal Inference & Cohort-targeted Longevity Strategy — LinkedIn 结构化稿，待确认**
 
-▎**Causal Inference & Cohort-targeted Longevity Strategy.** Turned observational behaviour data into cohort-targeted interventions by linking causal effect estimation, degradation forecasting and OTA strategy evaluation. Six-month matched-cohort and within-vehicle counterfactual evaluations supported a projection of tens of millions of RMB in avoided warranty costs for one vehicle model. Used confounder control, propensity-score matching, ATT and dose-response estimation to isolate actionable behaviour drivers, then projected warranty-risk cohorts from early-life battery state-of-health trajectories to inform OTA strategies.
+▎**Battery Longevity & OTA Strategy** — *End-to-End Analytics Lead*. Led battery-longevity analysis from defining the observational-data question to evaluating cohort-targeted OTA strategies, linking causal effect estimation and degradation forecasting. Six-month matched-cohort and within-vehicle counterfactual evaluations supported a projection of tens of millions of RMB in avoided warranty costs for one vehicle model. Used confounder control, propensity-score matching, ATT and dose-response estimation to isolate actionable behaviour drivers, then projected warranty-risk cohorts from early-life battery state-of-health trajectories to inform OTA strategies.
 
 **第 3 条：End-to-End Offline Feature Store — LinkedIn 结构化稿，待确认**
 
-▎**End-to-End Offline Feature Store.** Designed a 1.5k+ vehicle-cycle behaviour feature system and built a department-wide offline Feature Store in-house, cutting feature-development time by approximately 85% and reducing duplicated computation and storage. Implemented the feature lifecycle—from Git-managed definitions and schema-driven PySpark ETL to validated ingestion, historical backfills, monitoring and model-ready export through internal APIs—making features reproducible across analysis, model training and batch scoring.
+▎**Offline Feature Store** — *0-to-1 Technical Lead*. Led the build of a department-wide offline Feature Store from the ground up, covering 1.5k+ vehicle-cycle behaviour features, cutting feature-development time by approximately 85% and reducing duplicated computation and storage. Implemented the feature lifecycle—from Git-managed definitions and schema-driven PySpark ETL to validated ingestion, historical backfills, monitoring and model-ready export through internal APIs—making features reproducible across analysis, model training and batch scoring.
 
 **第 4 条：AI-Assisted Risk Intelligence & Investigation Product — LinkedIn 结构化稿，待确认**
 
-▎**AI-Assisted Risk Intelligence & Investigation Product.** Turned a rare-event risk ranking into an evidence-based investigation product used by 20+ internal users to analyse 1k+ vehicles each month. Designed cohort benchmarking, vehicle-level replay, feature-level explanations and historical-failure comparisons for evidence-backed case assessment. Led end-to-end product design and cloud delivery with AI coding assistance, building a Web/API architecture with StarRocks-backed analytics, asynchronous analysis, access controls and versioned outputs for reproducible investigations.
+▎**Risk Investigation Workbench** — *0-to-1 Product Lead*. Led the end-to-end build of an evidence-based investigation product based on the rare-event ranking, used by 20+ internal users to analyse 1k+ vehicles each month. Designed cohort benchmarking, vehicle-level replay, feature-level explanations and historical-failure comparisons for evidence-backed case assessment. Led end-to-end product design and cloud delivery with AI coding assistance, building a Web/API architecture with StarRocks-backed analytics, asynchronous analysis, access controls and versioned outputs for reproducible investigations.
 
 > **数据口径待确认：**`20+` 用户、`1k+` 车辆／月由本人补充；`analyse` 指平台分析覆盖量，不暗示每台车都完成了深入调查或据此更换电池。对外发布前核对内部统计及公开权限。
 
 **第 5 条：Confidence-Aware NLP Work-Order Classification — LinkedIn 结构化稿，待确认**
 
-▎**Confidence-Aware NLP Work-Order Classification.** Built a confidence-aware NLP classification system for 50k+ noisy after-sales work orders across 30+ categories, routing low-confidence cases to expert review. Automated over 93% of labelled samples, raising accuracy from 83% to 96% within three months (weighted F1 >0.90) and replacing roughly 12 person-hours of weekly manual classification. Co-designed the label taxonomy, engineered domain-informed TF-IDF features and trained a Random Forest classifier, using expert-verified labels for weekly retraining.
+▎**After-Sales NLP Classification** — *Model & Workflow Delivery*. Built a confidence-aware NLP classification system for 50k+ noisy after-sales work orders across 30+ categories, routing low-confidence cases to expert review. Automated over 93% of labelled samples, raising accuracy from 83% to 96% within three months (weighted F1 >0.90) and replacing roughly 12 person-hours of weekly manual classification. Co-designed the label taxonomy, engineered domain-informed TF-IDF features and trained a Random Forest classifier, using expert-verified labels for weekly retraining.
 
 **Skills 建议关联到 Li Auto 职位（未确认线上已添加）：** Machine Learning · Feature Engineering · Causal Inference · MLOps · Python (Programming Language)
 
@@ -80,11 +80,11 @@ I’m seeking Data Scientist opportunities in London and am authorised to work i
 
 **状态：以 ClearScore 定稿 CV 为技术母版、结合新确认的番茄业务口径调整的 LinkedIn 结构化稿，待确认；未核实已发布。**
 
-▎**Fanqie IP Popularity Model for Promotion Prioritisation.** Built a daily IP popularity model to inform marketing's continued-promotion decisions. The dashboard reached approximately 60% internal adoption; a business retrospective recorded approximately 40% higher anchor-tracked app downloads from team-promoted videos after adoption. Integrated consumption, dissemination and search signals via automated ETL and data-quality monitoring, combining PCA-derived statistical weights with business-agreed AHP weights; deployed the model and dashboard to the cloud.
+▎**Fanqie IP Popularity Model** — *Model & Dashboard Owner*. Built a daily IP popularity model to inform marketing's continued-promotion decisions. The dashboard reached approximately 60% internal adoption; a business retrospective recorded approximately 40% higher anchor-tracked app downloads from team-promoted videos after adoption. Integrated consumption, dissemination and search signals via automated ETL and data-quality monitoring, combining PCA-derived statistical weights with business-agreed AHP weights; deployed the model and dashboard to the cloud.
 
 > **标题定位与指标口径待核实：**标题突出本人建造的 IP 热度模型及其服务的续投优先级判断，不暗示本人构建了自动投流优化算法。产品早期尚无固定数据投流策略；业务方参考看板改变的是哪些 IP 获得续投，决策与执行不属于本人。`约 40%` 是业务复盘中的近似数字，比较调整前后各一个月、同一团队负责的全部推广视频的锚点链路 App 下载合计。调整前周度数据相对平稳，调整后多数周保持在更高、相对平稳的水平；尚无原始周数据核验，不能说每周都提升 40%。这不是单个关键 IP 的结果、全 App 下载增长或看板的已验证因果效果。视频总量据本人回忆相近、总预算没有增加，总曝光（未区分付费和自然）增加；活动、周期、视频组合和自然扩散等影响尚未被证实已排除，发布前应核对原始记录。试投后的判断机制是合理解释，不写成已核实的固定阈值或本人制定的投流策略；后续固化策略未写作已交付成果。
 
-▎**Qishui Music Audience Saturation & Acquisition Targeting.** Diagnosed falling new-user activations as an audience-saturation problem in video-led acquisition. Marketing shifted promotion from saturated to higher-potential content verticals. Used funnel-stage analysis and cross-product audience matching to compare installed-user penetration with anchor-linked new-user activation rates by vertical.
+▎**Qishui Music Acquisition Targeting** — *Acquisition Diagnostics*. Diagnosed falling new-user activations as an audience-saturation problem in video-led acquisition. Marketing shifted promotion from saturated to higher-potential content verticals. Used funnel-stage analysis and cross-product audience matching to compare installed-user penetration with anchor-linked new-user activation rates by vertical.
 
 > **待确认：**本人新确认原稿 `activation-to-registration conversion` 下降与真实问题不符；应用商店下载不可直接观测，可观察的是锚点链路关联的新用户激活。四象限分析已做，但仅保留在项目语料库和面试细节，正文突出漏斗诊断、受众测量及业务实际调投。本人未参与最终复盘，不写激活 uplift、成本改善或其他未经验证结果；旧简历仍需按新口径另行更新。
 
@@ -222,18 +222,18 @@ Graduated in the top 1% of my cohort (GPA: 4.6/5.0), earning the National Schola
 
 ## LinkedIn ver — Li Auto Experience（2,000 字符以内）
 
-以下为独立的纯文本粘贴版；上文五条完整工作稿不因字数限制而删改。
+以下为独立的纯文本粘贴版；上文五条完整工作稿不因字数限制而删改。LinkedIn 纯文本无法把标签固定到右边，故用 `项目名称 | 负责范围`；Technical / Analytics / Product Lead 指项目工作主导，不代表人员管理或独自决定 OTA 上线。
 
 ```text
-▎Behavioural Risk Scoring & MLOps: Prioritised rare thermal-runaway investigations under ~1:40,000 class imbalance. Captured 93% of historical cases in the top 2% of vehicles, narrowing review from tens of thousands to thousands. Built an explainable ranker from 1.5k+ behaviour features via statistical screening, redundancy control and distribution-based scoring; deployed monthly Docker scoring with APIs and monitoring.
+▎Safety Risk Ranking & MLOps | 0-to-1 Technical Lead: Led the build of an explainable ranking for rare thermal-runaway investigations, using past cases and vehicle features from my Feature Store. In retrospective review, 93% of evaluated vehicles that failed later had ranked in the top 2% of an earlier monthly run. Delivered monthly batch scoring with APIs and monitoring; specialists review the evidence before deciding next steps.
 
-▎Causal Inference & Cohort-targeted Longevity Strategy: Identified battery-degradation drivers to target cohort-specific OTA interventions. Six-month matched-cohort and within-vehicle evaluations projected tens of millions of RMB in avoided warranty costs for one model. Used confounder control, propensity-score matching, ATT/dose-response estimation and SOH forecasts.
+▎Battery Longevity & OTA Strategy | End-to-End Analytics Lead: Led analysis from problem definition to evaluation of cohort-specific OTA interventions. Six-month matched-cohort and within-vehicle evaluations projected tens of millions of RMB in avoided warranty costs for one model. Used confounder control, propensity-score matching, ATT/dose-response estimation and SOH forecasts.
 
-▎End-to-End Offline Feature Store: Replaced fragmented feature engineering with an in-house, department-wide Feature Store of 1.5k+ vehicle-cycle features, cutting development time by ~85%. Git-managed definitions and schema-driven PySpark ETL supported backfills, validation and reusable APIs across analysis, training and scoring.
+▎Offline Feature Store | 0-to-1 Technical Lead: Led the build of a department-wide Feature Store from the ground up, with 1.5k+ vehicle-cycle features, cutting feature-development time by ~85%. Git-managed definitions and schema-driven PySpark ETL supported backfills, validation and reusable APIs across analysis, training and scoring.
 
-▎AI-Assisted Risk Intelligence & Investigation Product: Made rare-event risk rankings usable for vehicle investigations: 20+ users analysed 1k+ vehicles monthly. Built cohort benchmarks, vehicle replay and feature explanations into a cloud Web/API with StarRocks analytics, async analysis, access controls and versioned outputs, using AI coding assistance.
+▎Risk Investigation Workbench | 0-to-1 Product Lead: Led the end-to-end build of a workbench that made risk rankings usable for investigation: 20+ users analysed 1k+ vehicles monthly. Built cohort benchmarks, vehicle replay and feature explanations into a cloud Web/API with StarRocks analytics, async analysis, access controls and versioned outputs, using AI coding assistance.
 
-▎Confidence-Aware NLP Work-Order Classification: To cut manual classification of 50k+ noisy after-sales work orders across 30+ categories, built a classifier with expert review for uncertain cases. Automated >93% of labelled samples, lifting accuracy 83%→96% in three months (weighted F1 >0.90) and saving ~12 manual hours weekly. Used domain TF-IDF, Random Forest and weekly retraining on verified labels.
+▎After-Sales NLP Classification | Model & Workflow Delivery: To cut manual classification of 50k+ noisy after-sales work orders across 30+ categories, built a classifier with expert review for uncertain cases. Automated >93% of labelled samples, lifting accuracy 83%→96% in three months (weighted F1 >0.90) and saving ~12 manual hours weekly. Used domain TF-IDF, Random Forest and weekly retraining on verified labels.
 ```
 
 ## LinkedIn ver — ByteDance Experience（2,000 字符以内）
@@ -241,7 +241,7 @@ Graduated in the top 1% of my cohort (GPA: 4.6/5.0), earning the National Schola
 以下为独立的纯文本粘贴版；上文完整工作稿及指标口径说明不删改。
 
 ```text
-▎Fanqie IP Popularity Model for Promotion Prioritisation: To inform which IPs warranted continued promotion beyond video-level engagement, built a daily popularity model. The dashboard reached ~60% internal adoption; a business retrospective recorded ~40% higher anchor-tracked app downloads from team-promoted videos after adoption. Integrated consumption, dissemination and search signals through automated ETL and data-quality monitoring, combining PCA-derived statistical weights with business-agreed AHP weights; cloud-deployed the model and dashboard.
+▎Fanqie IP Popularity Model | Model & Dashboard Owner: To inform which IPs warranted continued promotion beyond video-level engagement, built a daily popularity model. The dashboard reached ~60% internal adoption; a business retrospective recorded ~40% higher anchor-tracked app downloads from team-promoted videos after adoption. Integrated consumption, dissemination and search signals through automated ETL and data-quality monitoring, combining PCA-derived statistical weights with business-agreed AHP weights; cloud-deployed the model and dashboard.
 
-▎Qishui Music Audience Saturation & Acquisition Targeting: Diagnosed falling new-user activations as an audience-saturation problem in video-led acquisition. Marketing shifted promotion from saturated to higher-potential content verticals. Used funnel-stage analysis and cross-product audience matching to compare installed-user penetration with anchor-linked new-user activation rates by vertical.
+▎Qishui Music Acquisition Targeting | Acquisition Diagnostics: Diagnosed falling new-user activations as an audience-saturation problem in video-led acquisition. Marketing shifted promotion from saturated to higher-potential content verticals. Used funnel-stage analysis and cross-product audience matching to compare installed-user penetration with anchor-linked new-user activation rates by vertical.
 ```
